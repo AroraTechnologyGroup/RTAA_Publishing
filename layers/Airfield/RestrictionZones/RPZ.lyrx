@@ -1,0 +1,433 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "1.4.0",
+  "build" : 7198,
+  "layers" : [
+    "CIMPATH=layermap/runway_helipad_design_surface4.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "RPZ",
+      "uRI" : "CIMPATH=layermap/runway_helipad_design_surface4.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant",
+        "start" : 978307200000
+      },
+      "metadataURI" : "CIMPATH=Metadata/8b333fdb320773d233d09a84fc3a1b71.xml",
+      "description" : "RunwayHelipadDesignSurface",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface"
+      },
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "maxDistance" : -1,
+        "minDistance" : -1,
+        "preloadTextureCutoffHigh" : 0,
+        "preloadTextureCutoffLow" : 0.25,
+        "textureCutoffHigh" : 0.25,
+        "textureCutoffLow" : 1,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "verticalUnit" : {
+          "uwkid" : 9003
+        },
+        "lighting" : "OneSideDataNormal"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "transparency" : 50,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "Shape.Z",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "definitionExpression" : "STATUS = 'ACTIVE' And DESIGNSU = 'RPZ'",
+        "displayField" : "NAME",
+        "editable" : true,
+        "dataConnection" : {
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "Airfield",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "RunwayHelipadDesignSurface",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "None",
+      "enableDisplayFilters" : true,
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expression" : "$feature.NAME",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Polygon",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : false,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ]
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 80,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 0,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "HorizontalInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Map",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Point",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou"
+          },
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "Low",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 10,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMUniqueValueRenderer",
+        "colorRamp" : {
+          "type" : "CIMRandomHSVColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "maxH" : 360,
+          "minS" : 15,
+          "maxS" : 30,
+          "minV" : 99,
+          "maxV" : 100,
+          "minAlpha" : 100,
+          "maxAlpha" : 100
+        },
+        "defaultLabel" : "<all other values>",
+        "defaultSymbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "name" : "Group 22",
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 0.69999999999999996,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    110,
+                    110,
+                    110,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "name" : "Group 22",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    130,
+                    130,
+                    130,
+                    100
+                  ]
+                }
+              }
+            ]
+          },
+          "symbolName" : "Group 22"
+        },
+        "fields" : [
+          "DESIGNSU"
+        ],
+        "groups" : [
+          {
+            "type" : "CIMUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "RPZ",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 15",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 15",
+                        "color" : {
+                          "type" : "CIMHSVColor",
+                          "values" : [
+                            81.047996520996094,
+                            22.030000686645508,
+                            99.959999084472656,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 15"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "RPZ"
+                    ]
+                  }
+                ],
+                "visible" : true
+              }
+            ],
+            "heading" : "Design Surface Type"
+          }
+        ]
+      },
+      "scaleSymbols" : true,
+      "snappable" : true,
+      "symbolLayerDrawing" : {
+        "type" : "CIMSymbolLayerDrawing",
+        "symbolLayers" : [
+          {
+            "type" : "CIMSymbolLayerIdentifier",
+            "symbolReferenceName" : "RequiredForDraw",
+            "symbolLayerName" : "Group 15"
+          },
+          {
+            "type" : "CIMSymbolLayerIdentifier",
+            "symbolReferenceName" : "RequiredForDraw",
+            "symbolLayerName" : "Group 22"
+          }
+        ]
+      }
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/8b333fdb320773d233d09a84fc3a1b71.xml",
+      "data" : "<metadata xml:lang=\"en\"><Esri><CreaDate>20160525</CreaDate><CreaTime>12053000</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20080812</SyncDate><SyncTime>10095100</SyncTime><ModDate>20080812</ModDate><ModTime>10095100</ModTime><ArcGISFormat>1.0</ArcGISFormat><DataProperties><itemProps><itemLocation><linkage Sync=\"TRUE\">file://\\\\ARORALAPTOP50\\ESRI_Work_Folder\\Projects\\Reno_Tahoe\\MostRecentMasterGDB\\Checkouts\\RTAA_Delivery_05_25_16.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></itemLocation></itemProps><lineage><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.3\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20160223\" Time=\"170052\">CalculateField \"RTAA Master GDB\\Airfield\\RunwayHelipadDesignSurface\" STATUS \"SHORT_TERM\" VB #</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.3\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20160224\" Time=\"132655\">CalculateField RunwayHelipadDesignSurface STATUS \"Active\" VB #</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.3\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20160224\" Time=\"132710\">CalculateField RunwayHelipadDesignSurface STATUS \"ACTIVE\" VB #</Process></lineage></DataProperties></Esri><idinfo><native Sync=\"TRUE\">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.3</native><descript><langdata Sync=\"TRUE\">en</langdata><abstract>A three-dimensional surface that is used in runway or heliport/helipad design.</abstract><purpose>The purpose of this feature class is to support airport requirements for this type of geospatial vector data.</purpose></descript><citation><citeinfo><origin>REQUIRED: The name of an organization or individual that developed the data set.</origin><pubdate>REQUIRED: The date when the data set is published or otherwise made available for release.</pubdate><title Sync=\"TRUE\">RunwayHelipadDesignSurface</title><ftname Sync=\"TRUE\">RunwayHelipadDesignSurface</ftname><geoform Sync=\"TRUE\">vector digital data</geoform><onlink Sync=\"TRUE\">computer03Temp\temp.gdb</onlink></citeinfo></citation><timeperd><current>REQUIRED: The basis on which the time period of content information is determined.</current><timeinfo><sngdate><caldate>REQUIRED: The year (and optionally month, or month and day) for which the data set corresponds to the ground.</caldate></sngdate></timeinfo></timeperd><status><progress>To be populated</progress><update>As needed</update></status><spdom><bounding><westbc Sync=\"TRUE\">REQUIRED: Western-most coordinate of the limit of coverage expressed in longitude.</westbc><eastbc Sync=\"TRUE\">REQUIRED: Eastern-most coordinate of the limit of coverage expressed in longitude.</eastbc><northbc Sync=\"TRUE\">REQUIRED: Northern-most coordinate of the limit of coverage expressed in latitude.</northbc><southbc Sync=\"TRUE\">REQUIRED: Southern-most coordinate of the limit of coverage expressed in latitude.</southbc></bounding></spdom><keywords><theme><themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt><themekey>REQUIRED: Common-use word or phrase used to describe the subject of the data set.</themekey></theme></keywords><accconst>REQUIRED: Restrictions and legal prerequisites for accessing the data set.</accconst><useconst>REQUIRED: Restrictions and legal prerequisites for using the data set after access is granted.</useconst><natvform Sync=\"TRUE\">File Geodatabase Feature Class</natvform><ptcontac><cntinfo><cntperp><cntper>Daniel P. Bartholomew, AICP, MBA, A.A.E.</cntper><cntorg>Reno-Tahoe Airport Authority</cntorg></cntperp><cntpos>Manager of Planning and Geographic Information Systems</cntpos><cntvoice>(775) 328-6801</cntvoice><cntemail>dbartholomew@renoairport.com</cntemail></cntinfo></ptcontac><secinfo><secsys>Applicable Data Security Standard</secsys><secclass>Restricted</secclass><sechandl>See Data Security Standard</sechandl></secinfo></idinfo><dataIdInfo><envirDesc Sync=\"TRUE\">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.3</envirDesc><dataLang><languageCode Sync=\"TRUE\" value=\"en\"/></dataLang><idCitation><resTitle Sync=\"TRUE\">FeatureClassName</resTitle></idCitation></dataIdInfo><metainfo><langmeta Sync=\"TRUE\">en</langmeta><metstdn Sync=\"TRUE\">FGDC Content Standards for Digital Geospatial Metadata</metstdn><metstdv Sync=\"TRUE\">FGDC-STD-001-1998</metstdv><mettc Sync=\"TRUE\">local time</mettc><metc><cntinfo><cntorgp><cntper>Randy Murphy</cntper><cntorg>Metadata auto-generated by Grafton Technologies, Inc.</cntorg></cntorgp><cntaddr><addrtype>43 Federal Street</addrtype><city>Newburyport</city><state>Massachusetts</state><postal>01950</postal></cntaddr><cntvoice>(617)290-9400</cntvoice></cntinfo></metc><metd Sync=\"TRUE\">20080812</metd><metextns><onlink Sync=\"TRUE\">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync=\"TRUE\">ESRI Metadata Profile</metprof></metextns></metainfo><mdLang><languageCode Sync=\"TRUE\" value=\"en\"/></mdLang><mdStanName Sync=\"TRUE\">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync=\"TRUE\">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync=\"TRUE\" value=\"004\"/></mdChar><mdHrLv><ScopeCd Sync=\"TRUE\" value=\"005\"/></mdHrLv><mdHrLvName Sync=\"TRUE\">dataset</mdHrLvName><distinfo><resdesc Sync=\"TRUE\">Downloadable Data</resdesc></distinfo><distInfo><distributor><distorTran><onLineSrc><orDesc Sync=\"TRUE\">002</orDesc><linkage Sync=\"TRUE\">file://computer03Temp\temp.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></onLineSrc></distorTran><distorFormat><formatName Sync=\"TRUE\">File Geodatabase Feature Class</formatName></distorFormat></distributor></distInfo><spdoinfo><direct Sync=\"TRUE\">Vector</direct><ptvctinf><esriterm Name=\"FeatureClassName\"><efeatyp Sync=\"TRUE\">Simple</efeatyp><efeageom Sync=\"TRUE\">Polygon</efeageom><esritopo Sync=\"TRUE\">FALSE</esritopo><efeacnt Sync=\"TRUE\">0</efeacnt><spindex Sync=\"TRUE\">TRUE</spindex><linrefer Sync=\"TRUE\">FALSE</linrefer></esriterm><sdtsterm Name=\"FeatureClassName\"><sdtstype Sync=\"TRUE\">G-polygon</sdtstype><ptvctcnt Sync=\"TRUE\">0</ptvctcnt></sdtsterm></ptvctinf></spdoinfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync=\"TRUE\" value=\"001\"/></topLvl><geometObjs Name=\"FeatureClassName\"><geoObjTyp><GeoObjTypCd Sync=\"TRUE\" value=\"001\"/></geoObjTyp><geoObjCnt Sync=\"TRUE\">0</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><eainfo><detailed Name=\"FeatureClassName\"><enttyp><enttypl Sync=\"TRUE\">FeatureClassName</enttypl><enttypt Sync=\"TRUE\">Feature Class</enttypt><enttypc Sync=\"TRUE\">0</enttypc></enttyp><attr><attrlabl Sync=\"TRUE\">OBJECTID</attrlabl><attalias Sync=\"TRUE\">OBJECTID</attalias><attrtype Sync=\"TRUE\">OID</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Internal feature number.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE</attrlabl><attalias Sync=\"TRUE\">SHAPE</attalias><attrtype Sync=\"TRUE\">Geometry</attrtype><attwidth Sync=\"TRUE\">0</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Feature geometry.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">id</attrlabl><attalias Sync=\"TRUE\">Identifier</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">40</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique identifier used by people to refer to this feature (note: this is not a system primary or foreign key value) </attrdef></attr><attr><attrlabl Sync=\"TRUE\">assetId</attrlabl><attalias Sync=\"TRUE\">Asset ID</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">30</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique identifier associated with this feature for the purpose of linking to an asset management system</attrdef></attr><attr><attrlabl Sync=\"TRUE\">icaoCode</attrlabl><attalias Sync=\"TRUE\">ICAO Code</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The 4-letter ICAO code of the aerodrome/heliport </attrdef></attr><attr><attrlabl Sync=\"TRUE\">NAME</attrlabl><attalias Sync=\"TRUE\">Name</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The name of the feature.  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">DESIGNSU</attrlabl><attalias Sync=\"TRUE\">Design Surface Type</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">16</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A description of the design surface </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ZONEUSE</attrlabl><attalias Sync=\"TRUE\">Zone Use</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A description of the use of the zone </attrdef></attr><attr><attrlabl Sync=\"TRUE\">safetyRegulation</attrlabl><attalias Sync=\"TRUE\">Safety Regulation</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A description of the use of the zone </attrdef></attr><attr><attrlabl Sync=\"TRUE\">DETERMINAT</attrlabl><attalias Sync=\"TRUE\">Determination</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">255</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A formal declaration of the runway/helipad/heliport safety area condition with respect to standards and any requirement improvements  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">DETDATE</attrlabl><attalias Sync=\"TRUE\">Determination Date</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The date the safety area determination was approved  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ZONEINNER</attrlabl><attalias Sync=\"TRUE\">Zone Inner Width</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The width of the narrow end of a trapezoidal shaped DesignSurface feature. This is normally the end that is closest to the landing surface  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ZONEOUTER</attrlabl><attalias Sync=\"TRUE\">Zone Outer Width</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The width of the wide end of a trapezoidal shaped DesignSurface feature. This is normally the end that is furthest from the landing surface </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ZONELENGTH</attrlabl><attalias Sync=\"TRUE\">Zone Length</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The length of a trapezoidal shaped DesignSurface feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">SLOPE</attrlabl><attalias Sync=\"TRUE\">Slope</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The low to high gradient within the airspace </attrdef></attr><attr><attrlabl Sync=\"TRUE\">STATUS</attrlabl><attalias Sync=\"TRUE\">Status</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">20</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A temporal description of the operational status of the feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ALTERNATIV</attrlabl><attalias Sync=\"TRUE\">Alternative</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Discriminator used to tie features of a plan or proposal together into a version </attrdef></attr><attr><attrlabl Sync=\"TRUE\">projectNumber</attrlabl><attalias Sync=\"TRUE\">Project Number</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">20</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique number associated with the project or work activity that installed or first recorded the location of this feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">DESCRIP</attrlabl><attalias Sync=\"TRUE\">Description</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">255</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Description of the feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">accuracy</attrlabl><attalias Sync=\"TRUE\">Accuracy</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An indicator of the spatial accuracy of the geometry used to depict this feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataSource</attrlabl><attalias Sync=\"TRUE\">Data Source</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The source of the data in this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataStatus</attrlabl><attalias Sync=\"TRUE\">Data Status</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The development stage in which the data is in </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dateDataAcquired</attrlabl><attalias Sync=\"TRUE\">Date Data Acquired</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The date the data in this record was first captured </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataStartDate</attrlabl><attalias Sync=\"TRUE\">Start Date of Data Validity</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The first date on which the data represented by this feature reflects a current, real world condition</attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataEndDate</attrlabl><attalias Sync=\"TRUE\">End Date of Data Validity</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The last date on which the data represented by this feature reflects a current, real world condition</attrdef></attr><attr><attrlabl Sync=\"TRUE\">editorName</attrlabl><attalias Sync=\"TRUE\">Editor Name</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The name of the individual who last edited this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">lastUpdate</attrlabl><attalias Sync=\"TRUE\">Last Update</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The date upon which any data associated with this record was last updated </attrdef></attr><attr><attrlabl Sync=\"TRUE\">metaId</attrlabl><attalias Sync=\"TRUE\">Metadata Id</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An identifier used to refer to a metadata record that provide additional information about the data in this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">USERFLAG</attrlabl><attalias Sync=\"TRUE\">User Flag</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">254</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An operator defined work area. This attribute can be used by the operator for user defined system processes. It does not affect the subject items data integrity and should not be used to store the subject items data </attrdef></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Length</attrlabl><attalias Sync=\"TRUE\">SHAPE_Length</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Length of feature in internal units.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Area</attrlabl><attalias Sync=\"TRUE\">SHAPE_Area</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Area of feature in internal units squared.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr></detailed></eainfo><mdDateSt Sync=\"TRUE\">20080812</mdDateSt></metadata>\r\n"
+    }
+  ]
+}
