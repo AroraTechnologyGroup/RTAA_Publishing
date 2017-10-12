@@ -1,0 +1,27 @@
+﻿from arcpy import *
+p = mp.ArcGISProject("CURRENT")
+p
+p.name
+p
+dir(p)
+map = p.listMaps('Viewer_Local')[0]
+msp
+map
+input_layer = map.listLayers('Apron')
+input_layer
+for x in input_layer:     print(x.connectionProperties)
+input_layer = map.listLayers('Apron')
+input_layer
+for x in input_layer:     print(x.connectionProperties)
+from arcpy import mp
+p = mp.ArgAdaptor("CURRENT")
+p = mp.ArcGISProject("CURRENT")
+map = p.listMaps('Viewer_Map_2_26_B')[0]
+map = p.listMaps('Viewer Map_2_26_B')[0]
+map
+lyrs = map.listLayers('Passenger*')
+lyrs
+lyrs[0]
+lyrs[0].name
+lyr = lyrs[0]
+lyr.connectionProperties

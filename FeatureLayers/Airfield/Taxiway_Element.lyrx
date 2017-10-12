@@ -1,23 +1,24 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "1.4.0",
-  "build" : 7198,
+  "version" : "2.0.0",
+  "build" : 8933,
   "layers" : [
-    "CIMPATH=localmap/taxiway_element2.xml"
+    "CIMPATH=viewer_local/taxiway_element.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "Taxiway Element",
-      "uRI" : "CIMPATH=localmap/taxiway_element2.xml",
+      "uRI" : "CIMPATH=viewer_local/taxiway_element.xml",
+      "sourceURI" : "c35c2cd441e14818ae113df88fa29505",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
-      "metadataURI" : "CIMPATH=Metadata/aee36406e2104ae91dd4abfea84a0d7f.xml",
+      "metadataURI" : "CIMPATH=Metadata/b5ff4d703dad6ea63083be035152f28b.xml",
       "description" : "TaxiwayElement",
       "layerElevation" : {
-        "type" : "CIMLayerElevationSurface",
-        "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}"
+        "type" : "CIMLayerElevationSurface"
       },
       "expanded" : true,
       "layer3DProperties" : {
@@ -46,13 +47,21 @@
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
         "type" : "CIMPopupInfo",
-        "title" : "{NAME}",
+        "title" : "Taxiway Element: {NAME}",
         "mediaInfos" : [
           {
+            "type" : "CIMAttachmentsMediaInfo",
+            "displayType" : "List"
+          },
+          {
             "type" : "CIMTableMediaInfo",
-            "row" : 1,
             "fields" : [
+              "id",
+              "assetId",
+              "NAME",
+              "icaoCode",
               "TAXIWAYID",
+              "runwayComplex",
               "TAXIWAYT",
               "SURFACEM",
               "PAVEMENTCL",
@@ -61,16 +70,32 @@
               "SEQUENCE",
               "SURFACET",
               "DESIGNGR",
+              "LENGTH",
               "WIDTH",
+              "MAXSPEED",
               "WINGSPAN",
               "STATUS",
-              "DESCRIP"
+              "ALTERNATIV",
+              "projectNumber",
+              "DESCRIP",
+              "accuracy",
+              "dataSource",
+              "dataStatus",
+              "dateDataAcquired",
+              "dataStartDate",
+              "dataEndDate",
+              "editorName",
+              "lastUpdate",
+              "metaId",
+              "USERFLAG"
             ]
           }
         ]
       },
       "showPopups" : true,
       "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
@@ -79,8 +104,50 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Identifier",
+            "fieldName" : "id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Asset ID",
+            "fieldName" : "assetId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ICAO Code",
+            "fieldName" : "icaoCode",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "Taxiway ID",
             "fieldName" : "TAXIWAYID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Runway Complex",
+            "fieldName" : "runwayComplex",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -142,8 +209,22 @@
           },
           {
             "type" : "CIMFieldDescription",
+            "alias" : "Length",
+            "fieldName" : "LENGTH",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "Width",
             "fieldName" : "WIDTH",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Maximum Speed",
+            "fieldName" : "MAXSPEED",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -163,17 +244,150 @@
           },
           {
             "type" : "CIMFieldDescription",
+            "alias" : "Alternative",
+            "fieldName" : "ALTERNATIV",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Project Number",
+            "fieldName" : "projectNumber",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "Description",
             "fieldName" : "DESCRIP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Accuracy",
+            "fieldName" : "accuracy",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Source",
+            "fieldName" : "dataSource",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Status",
+            "fieldName" : "dataStatus",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Date Data Acquired",
+            "fieldName" : "dateDataAcquired",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Start Date of Data Validity",
+            "fieldName" : "dataStartDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "End Date of Data Validity",
+            "fieldName" : "dataEndDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Editor Name",
+            "fieldName" : "editorName",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Last Update",
+            "fieldName" : "lastUpdate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Metadata Id",
+            "fieldName" : "metaId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "User Flag",
+            "fieldName" : "USERFLAG",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GlobalID",
+            "fieldName" : "GlobalID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_user",
+            "fieldName" : "created_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_date",
+            "fieldName" : "created_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_user",
+            "fieldName" : "last_edited_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_date",
+            "fieldName" : "last_edited_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Taxiway_Element/FeatureServer",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "TaxiwayElement",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=DBMS;DATABASE=RTAA_MasterGDB;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;ENCRYPTED_PASSWORD=00022e686879706c466b314a53573578743971754a424f467a6e2b3568484373556b7957656d436b4e4937446873553d2a00;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;SERVER=RENO-GISWEB;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Taxiway_Element/FeatureServer;USER=GIS_Reader;VERSION=dbo.DEFAULT",
+          "workspaceFactory" : "SDE",
+          "dataset" : "RTAA_MasterGDB.DBO.TaxiwayElement",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -194,60 +408,45 @@
       "htmlPopupEnabled" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
-      "enableDisplayFilters" : true,
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "$feature.NAME",
+          "expression" : "$feature[\"TAXIWAYID\"]",
           "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
             "featureType" : "Polygon",
             "avoidPolygonHoles" : true,
-            "canOverrunFeature" : true,
+            "canOverrunFeature" : false,
             "canPlaceLabelOutsidePolygon" : true,
             "canRemoveOverlappingLabel" : true,
-            "canStackLabel" : true,
+            "canStackLabel" : false,
             "connectionType" : "Unambiguous",
             "constrainOffset" : "NoConstraint",
             "contourAlignmentType" : "Page",
             "contourLadderType" : "Straight",
             "contourMaximumAngle" : 90,
             "enableConnection" : true,
-            "featureWeight" : 0,
+            "featureWeight" : 100,
             "fontHeightReductionLimit" : 4,
             "fontHeightReductionStep" : 0.5,
             "fontWidthReductionLimit" : 90,
             "fontWidthReductionStep" : 5,
             "graticuleAlignmentType" : "Straight",
-            "keyNumberGroupName" : "Default",
             "labelBuffer" : 15,
-            "labelLargestPolygon" : false,
+            "labelLargestPolygon" : true,
             "labelPriority" : -1,
             "labelStackingProperties" : {
               "type" : "CIMMaplexLabelStackingProperties",
               "stackAlignment" : "ChooseBest",
               "maximumNumberOfLines" : 3,
               "minimumNumberOfCharsPerLine" : 3,
-              "maximumNumberOfCharsPerLine" : 24,
-              "separators" : [
-                {
-                  "type" : "CIMMaplexStackingSeparator",
-                  "separator" : " ",
-                  "splitAfter" : true
-                },
-                {
-                  "type" : "CIMMaplexStackingSeparator",
-                  "separator" : ",",
-                  "visible" : true,
-                  "splitAfter" : true
-                }
-              ]
+              "maximumNumberOfCharsPerLine" : 24
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetCurvedFromLine",
-            "maximumLabelOverrun" : 80,
+            "maximumLabelOverrun" : 36,
             "maximumLabelOverrunUnit" : "Point",
             "minimumFeatureSizeUnit" : "Map",
             "multiPartOption" : "OneLabelPerPart",
@@ -271,7 +470,7 @@
             },
             "pointPlacementMethod" : "AroundPoint",
             "polygonAnchorPointType" : "GeometricCenter",
-            "polygonBoundaryWeight" : 0,
+            "polygonBoundaryWeight" : 200,
             "polygonExternalZones" : {
               "type" : "CIMMaplexExternalZonePriorities",
               "aboveLeft" : 4,
@@ -307,13 +506,14 @@
               "fontReduction" : 4,
               "abbreviation" : 5
             },
-            "thinningDistanceUnit" : "Point",
+            "thinningDistanceUnit" : "Map",
             "truncationMarkerCharacter" : ".",
             "truncationMinimumLength" : 1,
             "truncationPreferredCharacters" : "aeiou"
           },
-          "name" : "Class 1",
-          "priority" : -1,
+          "minimumScale" : 4697,
+          "name" : "Label Class 1",
+          "priority" : 0,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -358,15 +558,35 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
+              "compatibilityMode" : true,
               "depth3D" : 1,
+              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
               "fontFamilyName" : "Tahoma",
-              "fontStyleName" : "Regular",
+              "fontStyleName" : "Bold",
               "fontType" : "Unspecified",
-              "haloSize" : 1,
-              "height" : 10,
+              "haloSize" : 0.75,
+              "haloSymbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        255,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "height" : 9,
               "hinting" : "Default",
               "horizontalAlignment" : "Left",
               "kerning" : true,
@@ -397,13 +617,15 @@
               "verticalGlyphOrientation" : "Right",
               "wordSpacing" : 100,
               "billboardMode3D" : "FaceNearPlane"
-            }
+            },
+            "symbolName" : "Text"
           },
           "useCodedValue" : true,
           "visibility" : true,
           "iD" : -1
         }
       ],
+      "labelVisibility" : true,
       "renderer" : {
         "type" : "CIMSimpleRenderer",
         "patch" : "Default",
@@ -418,9 +640,9 @@
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    225,
-                    225,
-                    225,
+                    133,
+                    133,
+                    133,
                     100
                   ]
                 }
@@ -436,27 +658,8 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/aee36406e2104ae91dd4abfea84a0d7f.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10054200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Taxiway Element</resTitle></idCitation><idAbs>TaxiwayElement</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
-    }
-  ],
-  "elevationSurfaces" : [
-    {
-      "type" : "CIMMapElevationSurface",
-      "elevationMode" : "BaseGlobeSurface",
-      "name" : "Ground",
-      "verticalExaggeration" : 1,
-      "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}",
-      "color" : {
-        "type" : "CIMRGBColor",
-        "values" : [
-          255,
-          255,
-          255,
-          100
-        ]
-      },
-      "surfaceTINShadingMode" : "Smooth"
+      "uRI" : "CIMPATH=Metadata/b5ff4d703dad6ea63083be035152f28b.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20171011</CreaDate><CreaTime>13595200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Taxiway_Element</resTitle></idCitation><idAbs>TaxiwayElement</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ]
 }

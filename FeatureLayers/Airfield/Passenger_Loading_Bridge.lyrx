@@ -1,23 +1,24 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "1.4.0",
-  "build" : 7198,
+  "version" : "2.0.0",
+  "build" : 8933,
   "layers" : [
-    "CIMPATH=localmap/passenger_loading_bridge2.xml"
+    "CIMPATH=viewer_local/passenger_loading_bridge.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "Passenger Loading Bridge",
-      "uRI" : "CIMPATH=localmap/passenger_loading_bridge2.xml",
+      "uRI" : "CIMPATH=viewer_local/passenger_loading_bridge.xml",
+      "sourceURI" : "8002eb3b08704c55b92cdaf2b8413bad",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
-      "metadataURI" : "CIMPATH=Metadata/5cc2c48effd2cc80bcfc81a27535e664.xml",
+      "metadataURI" : "CIMPATH=Metadata/f6aee92c8ffd283d89c4b853476feda8.xml",
       "description" : "PassengerLoadingBridge",
       "layerElevation" : {
-        "type" : "CIMLayerElevationSurface",
-        "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}"
+        "type" : "CIMLayerElevationSurface"
       },
       "expanded" : true,
       "layer3DProperties" : {
@@ -46,22 +47,46 @@
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
         "type" : "CIMPopupInfo",
-        "title" : "{NAME}",
+        "title" : "Passenger Loading Bridge: {NAME}",
         "mediaInfos" : [
           {
+            "type" : "CIMAttachmentsMediaInfo",
+            "displayType" : "List"
+          },
+          {
             "type" : "CIMTableMediaInfo",
-            "row" : 1,
             "fields" : [
               "id",
+              "assetId",
+              "icaoCode",
               "NAME",
               "LOADINGBT",
-              "Gate"
+              "STATUS",
+              "ALTERNATIV",
+              "projectNum",
+              "DESCRIP",
+              "accuracy",
+              "dataSource",
+              "dataStatus",
+              "dateDataAc",
+              "dataStartD",
+              "dataEndDat",
+              "editorName",
+              "lastUpdate",
+              "metaId",
+              "USERFLAG",
+              "created_us",
+              "created_da",
+              "last_edite",
+              "last_edi_1"
             ]
           }
         ]
       },
       "showPopups" : true,
       "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
@@ -70,8 +95,29 @@
         "fieldDescriptions" : [
           {
             "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
             "alias" : "Identifier",
             "fieldName" : "id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "assetId",
+            "fieldName" : "assetId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "icaoCode",
+            "fieldName" : "icaoCode",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -91,17 +137,157 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Gate",
-            "fieldName" : "Gate",
+            "alias" : "STATUS",
+            "fieldName" : "STATUS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ALTERNATIV",
+            "fieldName" : "ALTERNATIV",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "projectNum",
+            "fieldName" : "projectNum",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "DESCRIP",
+            "fieldName" : "DESCRIP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "accuracy",
+            "fieldName" : "accuracy",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "dataSource",
+            "fieldName" : "dataSource",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "dataStatus",
+            "fieldName" : "dataStatus",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "dateDataAc",
+            "fieldName" : "dateDataAc",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "dataStartD",
+            "fieldName" : "dataStartD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "dataEndDat",
+            "fieldName" : "dataEndDat",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "editorName",
+            "fieldName" : "editorName",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "lastUpdate",
+            "fieldName" : "lastUpdate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "metaId",
+            "fieldName" : "metaId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "USERFLAG",
+            "fieldName" : "USERFLAG",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_us",
+            "fieldName" : "created_us",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_da",
+            "fieldName" : "created_da",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edite",
+            "fieldName" : "last_edite",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edi_1",
+            "fieldName" : "last_edi_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Leng",
+            "fieldName" : "Shape_Leng",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Passenger_Loading_Bridge/FeatureServer",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "PassengerLoadingBridge",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=DBMS;DATABASE=RTAA_MasterGDB;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;ENCRYPTED_PASSWORD=00022e686171496574356773695369483276506e6d357a7337417867714644515a69364239554f366e74416f53544d3d2a00;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;SERVER=RENO-GISWEB;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Passenger_Loading_Bridge/FeatureServer;USER=GIS_Reader;VERSION=dbo.DEFAULT",
+          "workspaceFactory" : "SDE",
+          "dataset" : "RTAA_MasterGDB.DBO.PassengerLoadingBridge",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -122,11 +308,10 @@
       "htmlPopupEnabled" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
-      "enableDisplayFilters" : true,
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "$feature.Gate",
+          "expression" : "$feature[\"NAME\"]",
           "expressionEngine" : "Arcade",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
@@ -227,7 +412,7 @@
             "truncationPreferredCharacters" : "aeiou"
           },
           "minimumScale" : 6296.230462180436,
-          "name" : "Class 1",
+          "name" : "Label Class 1",
           "priority" : 0,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
@@ -282,7 +467,7 @@
               "fontFamilyName" : "Tahoma",
               "fontStyleName" : "Regular",
               "fontType" : "Unspecified",
-              "haloSize" : 1,
+              "haloSize" : 0.75,
               "haloSymbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
@@ -392,27 +577,8 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/5cc2c48effd2cc80bcfc81a27535e664.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10053300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Passenger Loading Bridge</resTitle></idCitation><idAbs>PassengerLoadingBridge</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
-    }
-  ],
-  "elevationSurfaces" : [
-    {
-      "type" : "CIMMapElevationSurface",
-      "elevationMode" : "BaseGlobeSurface",
-      "name" : "Ground",
-      "verticalExaggeration" : 1,
-      "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}",
-      "color" : {
-        "type" : "CIMRGBColor",
-        "values" : [
-          255,
-          255,
-          255,
-          100
-        ]
-      },
-      "surfaceTINShadingMode" : "Smooth"
+      "uRI" : "CIMPATH=Metadata/f6aee92c8ffd283d89c4b853476feda8.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20171011</CreaDate><CreaTime>13573200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Passenger_Loading_Bridge</resTitle></idCitation><idAbs>PassengerLoadingBridge</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ]
 }

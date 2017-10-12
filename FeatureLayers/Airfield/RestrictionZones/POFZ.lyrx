@@ -1,19 +1,18 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "1.4.0",
-  "build" : 7198,
+  "version" : "2.0.0",
+  "build" : 8933,
   "layers" : [
-    "CIMPATH=localmap/pofz2.xml"
+    "CIMPATH=15acfb196b02419abcbe47838b48c726.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "POFZ",
-      "uRI" : "CIMPATH=localmap/pofz2.xml",
+      "uRI" : "CIMPATH=15acfb196b02419abcbe47838b48c726.xml",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/71027de5a696345c4155d5b41d3f5089.xml",
       "description" : "RunwayHelipadDesignSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface"
@@ -40,7 +39,7 @@
       "layerType" : "Operational",
       "showLegends" : true,
       "transparency" : 50,
-      "visibility" : true,
+      "visibility" : false,
       "displayCacheType" : "Permanent",
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
@@ -69,6 +68,8 @@
       },
       "showPopups" : true,
       "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
@@ -163,9 +164,9 @@
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/POFZ/FeatureServer",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "RunwayHelipadDesignSurface",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=DBMS;DATABASE=RTAA_MasterGDB;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;ENCRYPTED_PASSWORD=00022e686662726575314b2b32386563595658714842544241676e6f4d30735270756a5753794b7570304d6a2f36383d2a00;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;SERVER=RENO-GISWEB;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/POFZ/FeatureServer;USER=GIS_Reader;VERSION=dbo.DEFAULT",
+          "workspaceFactory" : "SDE",
+          "dataset" : "RTAA_MasterGDB.DBO.RunwayHelipadDesignSurface",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -188,216 +189,6 @@
       "htmlPopupEnabled" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
-      "enableDisplayFilters" : true,
-      "labelClasses" : [
-        {
-          "type" : "CIMLabelClass",
-          "expression" : "$feature.NAME",
-          "expressionEngine" : "Arcade",
-          "featuresToLabel" : "AllVisibleFeatures",
-          "maplexLabelPlacementProperties" : {
-            "type" : "CIMMaplexLabelPlacementProperties",
-            "featureType" : "Polygon",
-            "avoidPolygonHoles" : true,
-            "canOverrunFeature" : true,
-            "canPlaceLabelOutsidePolygon" : true,
-            "canRemoveOverlappingLabel" : true,
-            "canStackLabel" : true,
-            "connectionType" : "Unambiguous",
-            "constrainOffset" : "NoConstraint",
-            "contourAlignmentType" : "Page",
-            "contourLadderType" : "Straight",
-            "contourMaximumAngle" : 90,
-            "enableConnection" : true,
-            "featureWeight" : 0,
-            "fontHeightReductionLimit" : 4,
-            "fontHeightReductionStep" : 0.5,
-            "fontWidthReductionLimit" : 90,
-            "fontWidthReductionStep" : 5,
-            "graticuleAlignmentType" : "Straight",
-            "keyNumberGroupName" : "Default",
-            "labelBuffer" : 15,
-            "labelLargestPolygon" : false,
-            "labelPriority" : -1,
-            "labelStackingProperties" : {
-              "type" : "CIMMaplexLabelStackingProperties",
-              "stackAlignment" : "ChooseBest",
-              "maximumNumberOfLines" : 3,
-              "minimumNumberOfCharsPerLine" : 3,
-              "maximumNumberOfCharsPerLine" : 24,
-              "separators" : [
-                {
-                  "type" : "CIMMaplexStackingSeparator",
-                  "separator" : " ",
-                  "splitAfter" : true
-                },
-                {
-                  "type" : "CIMMaplexStackingSeparator",
-                  "separator" : ",",
-                  "visible" : true,
-                  "splitAfter" : true
-                }
-              ]
-            },
-            "lineFeatureType" : "General",
-            "linePlacementMethod" : "OffsetCurvedFromLine",
-            "maximumLabelOverrun" : 80,
-            "maximumLabelOverrunUnit" : "Point",
-            "minimumFeatureSizeUnit" : "Map",
-            "multiPartOption" : "OneLabelPerPart",
-            "offsetAlongLineProperties" : {
-              "type" : "CIMMaplexOffsetAlongLineProperties",
-              "placementMethod" : "BestPositionAlongLine",
-              "labelAnchorPoint" : "CenterOfLabel",
-              "distanceUnit" : "Percentage",
-              "useLineDirection" : true
-            },
-            "pointExternalZonePriorities" : {
-              "type" : "CIMMaplexExternalZonePriorities",
-              "aboveLeft" : 4,
-              "aboveCenter" : 2,
-              "aboveRight" : 1,
-              "centerRight" : 3,
-              "belowRight" : 5,
-              "belowCenter" : 7,
-              "belowLeft" : 8,
-              "centerLeft" : 6
-            },
-            "pointPlacementMethod" : "AroundPoint",
-            "polygonAnchorPointType" : "GeometricCenter",
-            "polygonBoundaryWeight" : 0,
-            "polygonExternalZones" : {
-              "type" : "CIMMaplexExternalZonePriorities",
-              "aboveLeft" : 4,
-              "aboveCenter" : 2,
-              "aboveRight" : 1,
-              "centerRight" : 3,
-              "belowRight" : 5,
-              "belowCenter" : 7,
-              "belowLeft" : 8,
-              "centerLeft" : 6
-            },
-            "polygonFeatureType" : "General",
-            "polygonInternalZones" : {
-              "type" : "CIMMaplexInternalZonePriorities",
-              "center" : 1
-            },
-            "polygonPlacementMethod" : "HorizontalInPolygon",
-            "primaryOffset" : 1,
-            "primaryOffsetUnit" : "Point",
-            "removeExtraWhiteSpace" : true,
-            "repetitionIntervalUnit" : "Map",
-            "rotationProperties" : {
-              "type" : "CIMMaplexRotationProperties",
-              "rotationType" : "Arithmetic",
-              "alignmentType" : "Straight"
-            },
-            "secondaryOffset" : 100,
-            "strategyPriorities" : {
-              "type" : "CIMMaplexStrategyPriorities",
-              "stacking" : 1,
-              "overrun" : 2,
-              "fontCompression" : 3,
-              "fontReduction" : 4,
-              "abbreviation" : 5
-            },
-            "thinningDistanceUnit" : "Point",
-            "truncationMarkerCharacter" : ".",
-            "truncationMinimumLength" : 1,
-            "truncationPreferredCharacters" : "aeiou"
-          },
-          "name" : "Class 1",
-          "priority" : -1,
-          "standardLabelPlacementProperties" : {
-            "type" : "CIMStandardLabelPlacementProperties",
-            "featureType" : "Line",
-            "featureWeight" : "Low",
-            "labelWeight" : "High",
-            "numLabelsOption" : "OneLabelPerName",
-            "lineLabelPosition" : {
-              "type" : "CIMStandardLineLabelPosition",
-              "above" : true,
-              "inLine" : true,
-              "parallel" : true
-            },
-            "lineLabelPriorities" : {
-              "type" : "CIMStandardLineLabelPriorities",
-              "aboveStart" : 3,
-              "aboveAlong" : 3,
-              "aboveEnd" : 3,
-              "centerStart" : 3,
-              "centerAlong" : 3,
-              "centerEnd" : 3,
-              "belowStart" : 3,
-              "belowAlong" : 3,
-              "belowEnd" : 3
-            },
-            "pointPlacementMethod" : "AroundPoint",
-            "pointPlacementPriorities" : {
-              "type" : "CIMStandardPointPlacementPriorities",
-              "aboveLeft" : 2,
-              "aboveCenter" : 2,
-              "aboveRight" : 1,
-              "centerLeft" : 3,
-              "centerRight" : 2,
-              "belowLeft" : 3,
-              "belowCenter" : 3,
-              "belowRight" : 2
-            },
-            "rotationType" : "Arithmetic",
-            "polygonPlacementMethod" : "AlwaysHorizontal"
-          },
-          "textSymbol" : {
-            "type" : "CIMSymbolReference",
-            "symbol" : {
-              "type" : "CIMTextSymbol",
-              "blockProgression" : "TTB",
-              "depth3D" : 1,
-              "extrapolateBaselines" : true,
-              "fontEffects" : "Normal",
-              "fontEncoding" : "Unicode",
-              "fontFamilyName" : "Tahoma",
-              "fontStyleName" : "Regular",
-              "fontType" : "Unspecified",
-              "haloSize" : 1,
-              "height" : 10,
-              "hinting" : "Default",
-              "horizontalAlignment" : "Left",
-              "kerning" : true,
-              "letterWidth" : 100,
-              "ligatures" : true,
-              "lineGapType" : "ExtraLeading",
-              "symbol" : {
-                "type" : "CIMPolygonSymbol",
-                "symbolLayers" : [
-                  {
-                    "type" : "CIMSolidFill",
-                    "enable" : true,
-                    "color" : {
-                      "type" : "CIMRGBColor",
-                      "values" : [
-                        0,
-                        0,
-                        0,
-                        100
-                      ]
-                    }
-                  }
-                ]
-              },
-              "textCase" : "Normal",
-              "textDirection" : "LTR",
-              "verticalAlignment" : "Bottom",
-              "verticalGlyphOrientation" : "Right",
-              "wordSpacing" : 100,
-              "billboardMode3D" : "FaceNearPlane"
-            }
-          },
-          "useCodedValue" : true,
-          "visibility" : true,
-          "iD" : -1
-        }
-      ],
       "renderer" : {
         "type" : "CIMUniqueValueRenderer",
         "fields" : [
@@ -467,13 +258,6 @@
       },
       "scaleSymbols" : true,
       "snappable" : true
-    }
-  ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/71027de5a696345c4155d5b41d3f5089.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10052500</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>POFZ</resTitle></idCitation><idAbs>RunwayHelipadDesignSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ]
 }

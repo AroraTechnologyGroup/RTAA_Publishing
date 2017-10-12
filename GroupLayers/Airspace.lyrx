@@ -10,10 +10,11 @@
       "type" : "CIMFeatureLayer",
       "name" : "Obstacle",
       "uRI" : "CIMPATH=localmap/obstacle.xml",
+      "sourceURI" : "6a77fbf95f8749dc9f0922da77952031",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/3113b4a61bd3e504bfd3714748f0aeec.xml",
+      "metadataURI" : "CIMPATH=Metadata/2295e2407951b94521dffb40da33f147.xml",
       "description" : "Obstacle",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface"
@@ -38,22 +39,408 @@
         "lighting" : "OneSideDataNormal"
       },
       "layerType" : "Operational",
+      "minScale" : 18056,
       "showLegends" : true,
       "visibility" : true,
       "displayCacheType" : "Permanent",
       "maxDisplayCacheAge" : 5,
+      "popupInfo" : {
+        "type" : "CIMPopupInfo",
+        "title" : "Obstacle: {NAME}",
+        "mediaInfos" : [
+          {
+            "type" : "CIMAttachmentsMediaInfo",
+            "displayType" : "List"
+          },
+          {
+            "type" : "CIMTableMediaInfo",
+            "fields" : [
+              "id",
+              "assetId",
+              "icaoCode",
+              "NAME",
+              "OBSTACLETY",
+              "OBSTACLESO",
+              "ABOVEGROUN",
+              "elevation",
+              "FROMDTHLDD",
+              "FROMRWYCEN",
+              "FROMRWYEND",
+              "GROUPCODE",
+              "HEIGHTABOV",
+              "HABOVRWY",
+              "HABOVTDZ",
+              "LIGHTCODE",
+              "MARKINGF",
+              "PENVALSPE",
+              "PENVALSUP",
+              "elevationAccuracy",
+              "ELLIPSOIDH",
+              "lightingSystemType",
+              "OBSNUMBER",
+              "OISSURFA",
+              "FRANGIBLE",
+              "FAACODE",
+              "STATUS",
+              "ALTERNATIV",
+              "projectNumber",
+              "DESCRIP",
+              "accuracy",
+              "dataSource",
+              "dataStatus",
+              "dateDataAcquired",
+              "dataStartDate",
+              "dataEndDate",
+              "editorName",
+              "lastUpdate",
+              "metaId",
+              "USERFLAG",
+              "DISPOSTN"
+            ]
+          }
+        ]
+      },
       "showPopups" : true,
       "serviceLayerID" : -1,
-      "autoGenerateFeatureTemplates" : true,
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
         "displayField" : "NAME",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Identifier",
+            "fieldName" : "id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Asset ID",
+            "fieldName" : "assetId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ICAO Code",
+            "fieldName" : "icaoCode",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Obstacle Type",
+            "fieldName" : "OBSTACLETY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Obstacle Source",
+            "fieldName" : "OBSTACLESO",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Above Ground Level",
+            "fieldName" : "ABOVEGROUN",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Elevation",
+            "fieldName" : "elevation",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Distance from Displaced Threshold",
+            "fieldName" : "FROMDTHLDD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Distance from Runway Centerline",
+            "fieldName" : "FROMRWYCEN",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Distance from Runway End",
+            "fieldName" : "FROMRWYEND",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Group Code",
+            "fieldName" : "GROUPCODE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Height Above Airport",
+            "fieldName" : "HEIGHTABOV",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Height Above Runway",
+            "fieldName" : "HABOVRWY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Height Above Touchdown Zone",
+            "fieldName" : "HABOVTDZ",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Light Code",
+            "fieldName" : "LIGHTCODE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Marking Feature Type",
+            "fieldName" : "MARKINGF",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Pen Val Specified",
+            "fieldName" : "PENVALSPE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Pen Val Supplemental",
+            "fieldName" : "PENVALSUP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Elevation Accuracy",
+            "fieldName" : "elevationAccuracy",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Ellipsoid Height",
+            "fieldName" : "ELLIPSOIDH",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Lighting System Type",
+            "fieldName" : "lightingSystemType",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Obstruction Number",
+            "fieldName" : "OBSNUMBER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Ois Surface Condition",
+            "fieldName" : "OISSURFA",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Frangible",
+            "fieldName" : "FRANGIBLE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FAA Coordination Code",
+            "fieldName" : "FAACODE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Status",
+            "fieldName" : "STATUS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Alternative",
+            "fieldName" : "ALTERNATIV",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Project Number",
+            "fieldName" : "projectNumber",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Description",
+            "fieldName" : "DESCRIP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Accuracy",
+            "fieldName" : "accuracy",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Source",
+            "fieldName" : "dataSource",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Status",
+            "fieldName" : "dataStatus",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Date Data Acquired",
+            "fieldName" : "dateDataAcquired",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Start Date of Data Validity",
+            "fieldName" : "dataStartDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "End Date of Data Validity",
+            "fieldName" : "dataEndDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Editor Name",
+            "fieldName" : "editorName",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Last Update",
+            "fieldName" : "lastUpdate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Metadata Id",
+            "fieldName" : "metaId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "User Flag",
+            "fieldName" : "USERFLAG",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "DISPOSTN",
+            "fieldName" : "DISPOSTN",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GlobalID",
+            "fieldName" : "GlobalID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_user",
+            "fieldName" : "created_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_date",
+            "fieldName" : "created_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_user",
+            "fieldName" : "last_edited_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_date",
+            "fieldName" : "last_edited_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
-          "type" : "CIMFeatureDatasetDataConnection",
-          "featureDataset" : "Airspace",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb",
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "DATABASE=..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Obstacle/FeatureServer",
           "workspaceFactory" : "FileGDB",
           "dataset" : "Obstacle",
           "datasetType" : "esriDTFeatureClass"
@@ -61,9 +448,21 @@
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
       },
+      "featureTemplates" : [
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Obstacle",
+          "toolProgID" : "{2A8B3331-5238-4025-972E-452A69535B06}",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+            ]
+          }
+        }
+      ],
       "htmlPopupEnabled" : true,
       "selectable" : true,
-      "featureCacheType" : "None",
+      "featureCacheType" : "Session",
       "enableDisplayFilters" : true,
       "labelClasses" : [
         {
@@ -277,7 +676,7 @@
       ],
       "renderer" : {
         "type" : "CIMClassBreaksRenderer",
-        "barrierWeight" : "High",
+        "barrierWeight" : "None",
         "breaks" : [
           {
             "type" : "CIMClassBreak",
@@ -291,15 +690,20 @@
                   {
                     "type" : "CIMVectorMarker",
                     "enable" : true,
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : -0.5
+                    },
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
                     "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
+                      "xmin" : -1,
+                      "ymin" : -1,
+                      "xmax" : 1,
+                      "ymax" : 1
                     },
                     "markerGraphics" : [
                       {
@@ -308,17 +712,17 @@
                           "curveRings" : [
                             [
                               [
-                                1.2246467991473532e-16,
-                                2
+                                6.123233995736766e-17,
+                                1
                               ],
                               {
                                 "a" : [
                                   [
-                                    1.2246467991473532e-16,
-                                    2
+                                    6.123233995736766e-17,
+                                    1
                                   ],
                                   [
-                                    1.2246467991473532e-16,
+                                    0,
                                     0
                                   ],
                                   0,
@@ -332,12 +736,58 @@
                           "type" : "CIMPolygonSymbol",
                           "symbolLayers" : [
                             {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  245,
+                                  245,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                6.123233995736766e-17,
+                                1
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    6.123233995736766e-17,
+                                    1
+                                  ],
+                                  [
+                                    0,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMLineSymbol",
+                          "symbolLayers" : [
+                            {
                               "type" : "CIMSolidStroke",
                               "enable" : true,
+                              "colorLocked" : true,
                               "capStyle" : "Round",
                               "joinStyle" : "Round",
                               "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
+                              "miterLimit" : 1.4142999999999999,
                               "width" : 0.69999999999999996,
                               "color" : {
                                 "type" : "CIMRGBColor",
@@ -345,19 +795,6 @@
                                   0,
                                   0,
                                   0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMHSVColor",
-                                "values" : [
-                                  60,
-                                  100,
-                                  96,
                                   100
                                 ]
                               }
@@ -388,15 +825,20 @@
                   {
                     "type" : "CIMVectorMarker",
                     "enable" : true,
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : -0.5
+                    },
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
                     "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
+                      "xmin" : -1,
+                      "ymin" : -1,
+                      "xmax" : 1,
+                      "ymax" : 1
                     },
                     "markerGraphics" : [
                       {
@@ -405,17 +847,17 @@
                           "curveRings" : [
                             [
                               [
-                                1.2246467991473532e-16,
-                                2
+                                6.123233995736766e-17,
+                                1
                               ],
                               {
                                 "a" : [
                                   [
-                                    1.2246467991473532e-16,
-                                    2
+                                    6.123233995736766e-17,
+                                    1
                                   ],
                                   [
-                                    1.2246467991473532e-16,
+                                    0,
                                     0
                                   ],
                                   0,
@@ -429,12 +871,58 @@
                           "type" : "CIMPolygonSymbol",
                           "symbolLayers" : [
                             {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  245,
+                                  184,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                6.123233995736766e-17,
+                                1
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    6.123233995736766e-17,
+                                    1
+                                  ],
+                                  [
+                                    0,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMLineSymbol",
+                          "symbolLayers" : [
+                            {
                               "type" : "CIMSolidStroke",
                               "enable" : true,
+                              "colorLocked" : true,
                               "capStyle" : "Round",
                               "joinStyle" : "Round",
                               "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
+                              "miterLimit" : 1.4142999999999999,
                               "width" : 0.69999999999999996,
                               "color" : {
                                 "type" : "CIMRGBColor",
@@ -442,19 +930,6 @@
                                   0,
                                   0,
                                   0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMHSVColor",
-                                "values" : [
-                                  45,
-                                  100,
-                                  96,
                                   100
                                 ]
                               }
@@ -485,15 +960,20 @@
                   {
                     "type" : "CIMVectorMarker",
                     "enable" : true,
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : -0.5
+                    },
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
                     "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
+                      "xmin" : -1,
+                      "ymin" : -1,
+                      "xmax" : 1,
+                      "ymax" : 1
                     },
                     "markerGraphics" : [
                       {
@@ -502,17 +982,17 @@
                           "curveRings" : [
                             [
                               [
-                                1.2246467991473532e-16,
-                                2
+                                6.123233995736766e-17,
+                                1
                               ],
                               {
                                 "a" : [
                                   [
-                                    1.2246467991473532e-16,
-                                    2
+                                    6.123233995736766e-17,
+                                    1
                                   ],
                                   [
-                                    1.2246467991473532e-16,
+                                    0,
                                     0
                                   ],
                                   0,
@@ -526,12 +1006,58 @@
                           "type" : "CIMPolygonSymbol",
                           "symbolLayers" : [
                             {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  245,
+                                  122,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                6.123233995736766e-17,
+                                1
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    6.123233995736766e-17,
+                                    1
+                                  ],
+                                  [
+                                    0,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMLineSymbol",
+                          "symbolLayers" : [
+                            {
                               "type" : "CIMSolidStroke",
                               "enable" : true,
+                              "colorLocked" : true,
                               "capStyle" : "Round",
                               "joinStyle" : "Round",
                               "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
+                              "miterLimit" : 1.4142999999999999,
                               "width" : 0.69999999999999996,
                               "color" : {
                                 "type" : "CIMRGBColor",
@@ -539,19 +1065,6 @@
                                   0,
                                   0,
                                   0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMHSVColor",
-                                "values" : [
-                                  30,
-                                  100,
-                                  96,
                                   100
                                 ]
                               }
@@ -582,15 +1095,20 @@
                   {
                     "type" : "CIMVectorMarker",
                     "enable" : true,
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : -0.5
+                    },
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
                     "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
+                      "xmin" : -1,
+                      "ymin" : -1,
+                      "xmax" : 1,
+                      "ymax" : 1
                     },
                     "markerGraphics" : [
                       {
@@ -599,17 +1117,17 @@
                           "curveRings" : [
                             [
                               [
-                                1.2246467991473532e-16,
-                                2
+                                6.123233995736766e-17,
+                                1
                               ],
                               {
                                 "a" : [
                                   [
-                                    1.2246467991473532e-16,
-                                    2
+                                    6.123233995736766e-17,
+                                    1
                                   ],
                                   [
-                                    1.2246467991473532e-16,
+                                    0,
                                     0
                                   ],
                                   0,
@@ -623,12 +1141,58 @@
                           "type" : "CIMPolygonSymbol",
                           "symbolLayers" : [
                             {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  245,
+                                  61,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                6.123233995736766e-17,
+                                1
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    6.123233995736766e-17,
+                                    1
+                                  ],
+                                  [
+                                    0,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMLineSymbol",
+                          "symbolLayers" : [
+                            {
                               "type" : "CIMSolidStroke",
                               "enable" : true,
+                              "colorLocked" : true,
                               "capStyle" : "Round",
                               "joinStyle" : "Round",
                               "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
+                              "miterLimit" : 1.4142999999999999,
                               "width" : 0.69999999999999996,
                               "color" : {
                                 "type" : "CIMRGBColor",
@@ -636,19 +1200,6 @@
                                   0,
                                   0,
                                   0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMHSVColor",
-                                "values" : [
-                                  15,
-                                  100,
-                                  96,
                                   100
                                 ]
                               }
@@ -679,15 +1230,20 @@
                   {
                     "type" : "CIMVectorMarker",
                     "enable" : true,
+                    "anchorPoint" : {
+                      "x" : 0,
+                      "y" : 0,
+                      "z" : -0.5
+                    },
                     "anchorPointUnits" : "Relative",
                     "dominantSizeAxis3D" : "Z",
                     "size" : 4,
                     "billboardMode3D" : "FaceNearPlane",
                     "frame" : {
-                      "xmin" : -2,
-                      "ymin" : -2,
-                      "xmax" : 2,
-                      "ymax" : 2
+                      "xmin" : -1,
+                      "ymin" : -1,
+                      "xmax" : 1,
+                      "ymax" : 1
                     },
                     "markerGraphics" : [
                       {
@@ -696,17 +1252,17 @@
                           "curveRings" : [
                             [
                               [
-                                1.2246467991473532e-16,
-                                2
+                                6.123233995736766e-17,
+                                1
                               ],
                               {
                                 "a" : [
                                   [
-                                    1.2246467991473532e-16,
-                                    2
+                                    6.123233995736766e-17,
+                                    1
                                   ],
                                   [
-                                    1.2246467991473532e-16,
+                                    0,
                                     0
                                   ],
                                   0,
@@ -720,12 +1276,58 @@
                           "type" : "CIMPolygonSymbol",
                           "symbolLayers" : [
                             {
+                              "type" : "CIMSolidFill",
+                              "enable" : true,
+                              "color" : {
+                                "type" : "CIMRGBColor",
+                                "values" : [
+                                  245,
+                                  0,
+                                  0,
+                                  100
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMMarkerGraphic",
+                        "geometry" : {
+                          "curveRings" : [
+                            [
+                              [
+                                6.123233995736766e-17,
+                                1
+                              ],
+                              {
+                                "a" : [
+                                  [
+                                    6.123233995736766e-17,
+                                    1
+                                  ],
+                                  [
+                                    0,
+                                    0
+                                  ],
+                                  0,
+                                  1
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "symbol" : {
+                          "type" : "CIMLineSymbol",
+                          "symbolLayers" : [
+                            {
                               "type" : "CIMSolidStroke",
                               "enable" : true,
+                              "colorLocked" : true,
                               "capStyle" : "Round",
                               "joinStyle" : "Round",
                               "lineStyle3D" : "Strip",
-                              "miterLimit" : 10,
+                              "miterLimit" : 1.4142999999999999,
                               "width" : 0.69999999999999996,
                               "color" : {
                                 "type" : "CIMRGBColor",
@@ -733,19 +1335,6 @@
                                   0,
                                   0,
                                   0,
-                                  100
-                                ]
-                              }
-                            },
-                            {
-                              "type" : "CIMSolidFill",
-                              "enable" : true,
-                              "color" : {
-                                "type" : "CIMHSVColor",
-                                "values" : [
-                                  0,
-                                  100,
-                                  96,
                                   100
                                 ]
                               }
@@ -767,230 +1356,10 @@
         ],
         "classBreakType" : "GraduatedColor",
         "classificationMethod" : "NaturalBreaks",
-        "colorRamp" : {
-          "type" : "CIMPolarContinuousColorRamp",
-          "colorSpace" : {
-            "type" : "CIMICCColorSpace",
-            "url" : "Default RGB"
-          },
-          "fromColor" : {
-            "type" : "CIMHSVColor",
-            "values" : [
-              60,
-              100,
-              96,
-              100
-            ]
-          },
-          "toColor" : {
-            "type" : "CIMHSVColor",
-            "values" : [
-              0,
-              100,
-              96,
-              100
-            ]
-          },
-          "interpolationSpace" : "HSV",
-          "polarDirection" : "Auto"
-        },
         "field" : "ABOVEGROUN",
-        "numberFormat" : {
-          "type" : "CIMNumericFormat",
-          "alignmentOption" : "esriAlignLeft",
-          "alignmentWidth" : 0,
-          "roundingOption" : "esriRoundNumberOfDecimals",
-          "roundingValue" : 6,
-          "zeroPad" : true
-        },
         "showInAscendingOrder" : true,
-        "heading" : "Above Ground Level",
         "sampleSize" : 10000,
-        "defaultSymbol" : {
-          "type" : "CIMSymbolReference",
-          "symbol" : {
-            "type" : "CIMPointSymbol",
-            "symbolLayers" : [
-              {
-                "type" : "CIMVectorMarker",
-                "enable" : true,
-                "anchorPointUnits" : "Relative",
-                "dominantSizeAxis3D" : "Z",
-                "size" : 4,
-                "billboardMode3D" : "FaceNearPlane",
-                "frame" : {
-                  "xmin" : -2,
-                  "ymin" : -2,
-                  "xmax" : 2,
-                  "ymax" : 2
-                },
-                "markerGraphics" : [
-                  {
-                    "type" : "CIMMarkerGraphic",
-                    "geometry" : {
-                      "curveRings" : [
-                        [
-                          [
-                            1.2246467991473532e-16,
-                            2
-                          ],
-                          {
-                            "a" : [
-                              [
-                                1.2246467991473532e-16,
-                                2
-                              ],
-                              [
-                                1.2246467991473532e-16,
-                                0
-                              ],
-                              0,
-                              1
-                            ]
-                          }
-                        ]
-                      ]
-                    },
-                    "symbol" : {
-                      "type" : "CIMPolygonSymbol",
-                      "symbolLayers" : [
-                        {
-                          "type" : "CIMSolidStroke",
-                          "enable" : true,
-                          "capStyle" : "Round",
-                          "joinStyle" : "Round",
-                          "lineStyle3D" : "Strip",
-                          "miterLimit" : 10,
-                          "width" : 0.69999999999999996,
-                          "color" : {
-                            "type" : "CIMRGBColor",
-                            "values" : [
-                              0,
-                              0,
-                              0,
-                              100
-                            ]
-                          }
-                        },
-                        {
-                          "type" : "CIMSolidFill",
-                          "enable" : true,
-                          "color" : {
-                            "type" : "CIMRGBColor",
-                            "values" : [
-                              130,
-                              130,
-                              130,
-                              100
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ],
-                "respectFrame" : true
-              }
-            ],
-            "haloSize" : 1,
-            "scaleX" : 1,
-            "angleAlignment" : "Display"
-          }
-        },
-        "defaultLabel" : "<out of range>",
-        "exclusionLabel" : "<excluded>",
-        "exclusionSymbol" : {
-          "type" : "CIMSymbolReference",
-          "symbol" : {
-            "type" : "CIMPointSymbol",
-            "symbolLayers" : [
-              {
-                "type" : "CIMVectorMarker",
-                "enable" : true,
-                "anchorPointUnits" : "Relative",
-                "dominantSizeAxis3D" : "Z",
-                "size" : 4,
-                "billboardMode3D" : "FaceNearPlane",
-                "frame" : {
-                  "xmin" : -2,
-                  "ymin" : -2,
-                  "xmax" : 2,
-                  "ymax" : 2
-                },
-                "markerGraphics" : [
-                  {
-                    "type" : "CIMMarkerGraphic",
-                    "geometry" : {
-                      "curveRings" : [
-                        [
-                          [
-                            1.2246467991473532e-16,
-                            2
-                          ],
-                          {
-                            "a" : [
-                              [
-                                1.2246467991473532e-16,
-                                2
-                              ],
-                              [
-                                1.2246467991473532e-16,
-                                0
-                              ],
-                              0,
-                              1
-                            ]
-                          }
-                        ]
-                      ]
-                    },
-                    "symbol" : {
-                      "type" : "CIMPolygonSymbol",
-                      "symbolLayers" : [
-                        {
-                          "type" : "CIMSolidStroke",
-                          "enable" : true,
-                          "capStyle" : "Round",
-                          "joinStyle" : "Round",
-                          "lineStyle3D" : "Strip",
-                          "miterLimit" : 10,
-                          "width" : 0.69999999999999996,
-                          "color" : {
-                            "type" : "CIMRGBColor",
-                            "values" : [
-                              0,
-                              0,
-                              0,
-                              100
-                            ]
-                          }
-                        },
-                        {
-                          "type" : "CIMSolidFill",
-                          "enable" : true,
-                          "color" : {
-                            "type" : "CIMRGBColor",
-                            "values" : [
-                              255,
-                              0,
-                              0,
-                              100
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ],
-                "respectFrame" : true
-              }
-            ],
-            "haloSize" : 1,
-            "scaleX" : 1,
-            "angleAlignment" : "Display"
-          }
-        },
-        "useExclusionSymbol" : false,
+        "useExclusionSymbol" : true,
         "normalizationType" : "Nothing"
       },
       "scaleSymbols" : true,
@@ -1003,7 +1372,7 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/78b610085dc5b103a20889711ac4ded4.xml",
+      "metadataURI" : "CIMPATH=Metadata/85c7ee16b74f97a9fb5ace39d78afacd.xml",
       "description" : "ObstructionIdSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -1482,7 +1851,7 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/ce06a2758e1da49a3545ad87011c7ee1.xml",
+      "metadataURI" : "CIMPATH=Metadata/e50036fb11f467ff31c6c6c93f99be16.xml",
       "description" : "ObstructionIdSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -1961,7 +2330,7 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/13768dc855cb1c3e841a629406a28528.xml",
+      "metadataURI" : "CIMPATH=Metadata/c31e23ef9a92485bf246bc4c93ca0af0.xml",
       "description" : "ObstructionIdSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -2440,7 +2809,7 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/7624724d3a15a5a0c0f7841809d5626a.xml",
+      "metadataURI" : "CIMPATH=Metadata/07dbc82a23c8438bb0d4241022945ff7.xml",
       "description" : "ObstructionIdSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -2919,7 +3288,7 @@
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/bc43adc6be0969016537413f76400832.xml",
+      "metadataURI" : "CIMPATH=Metadata/4f2658f648dba9d2e17ebad38929a1ff.xml",
       "description" : "ObstructionIdSurface",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -3425,13 +3794,18 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/13768dc855cb1c3e841a629406a28528.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10051900</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>TRNS77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/07dbc82a23c8438bb0d4241022945ff7.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>OEIA</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/3113b4a61bd3e504bfd3714748f0aeec.xml",
-      "data" : "<metadata xml:lang=\"en\"><Esri><CreaDate>20160525</CreaDate><CreaTime>12055100</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20080812</SyncDate><SyncTime>10095100</SyncTime><ModDate>20080812</ModDate><ModTime>10095100</ModTime><ArcGISFormat>1.0</ArcGISFormat><DataProperties><itemProps><itemLocation><linkage Sync=\"TRUE\">file://\\\\ARORALAPTOP50\\ESRI_Work_Folder\\Projects\\Reno_Tahoe\\MostRecentMasterGDB\\Checkouts\\RTAA_Delivery_05_25_16.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></itemLocation></itemProps><lineage><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.2\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\DeleteFeatures\" Date=\"20151230\" Time=\"190140\">DeleteFeatures Obstacle</Process></lineage></DataProperties></Esri><idinfo><native Sync=\"TRUE\">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.3</native><descript><langdata Sync=\"TRUE\">en</langdata><abstract>All fixed (whether temporary or permanent) and mobile objects, or parts thereof, that are located on an area intended for the surface movement of aircraft, penetrating an Obstruction Identification Surface (OIS), or selected as representative object.  Use</abstract><purpose>The purpose of this feature class is to support airport requirements for this type of geospatial vector data.</purpose></descript><citation><citeinfo><origin>REQUIRED: The name of an organization or individual that developed the data set.</origin><pubdate>REQUIRED: The date when the data set is published or otherwise made available for release.</pubdate><title Sync=\"TRUE\">Obstacle</title><ftname Sync=\"TRUE\">Obstacle</ftname><geoform Sync=\"TRUE\">vector digital data</geoform><onlink Sync=\"TRUE\">computer03Temp\temp.gdb</onlink></citeinfo></citation><timeperd><current>REQUIRED: The basis on which the time period of content information is determined.</current><timeinfo><sngdate><caldate>REQUIRED: The year (and optionally month, or month and day) for which the data set corresponds to the ground.</caldate></sngdate></timeinfo></timeperd><status><progress>To be populated</progress><update>As needed</update></status><spdom><bounding><westbc Sync=\"TRUE\">REQUIRED: Western-most coordinate of the limit of coverage expressed in longitude.</westbc><eastbc Sync=\"TRUE\">REQUIRED: Eastern-most coordinate of the limit of coverage expressed in longitude.</eastbc><northbc Sync=\"TRUE\">REQUIRED: Northern-most coordinate of the limit of coverage expressed in latitude.</northbc><southbc Sync=\"TRUE\">REQUIRED: Southern-most coordinate of the limit of coverage expressed in latitude.</southbc></bounding></spdom><keywords><theme><themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt><themekey>REQUIRED: Common-use word or phrase used to describe the subject of the data set.</themekey></theme></keywords><accconst>REQUIRED: Restrictions and legal prerequisites for accessing the data set.</accconst><useconst>REQUIRED: Restrictions and legal prerequisites for using the data set after access is granted.</useconst><natvform Sync=\"TRUE\">File Geodatabase Feature Class</natvform><ptcontac><cntinfo><cntperp><cntper>Daniel P. Bartholomew, AICP, MBA, A.A.E.</cntper><cntorg>Reno-Tahoe Airport Authority</cntorg></cntperp><cntpos>Manager of Planning and Geographic Information Systems</cntpos><cntvoice>(775) 328-6801</cntvoice><cntemail>dbartholomew@renoairport.com</cntemail></cntinfo></ptcontac><secinfo><secsys>Applicable Data Security Standard</secsys><secclass>Restricted</secclass><sechandl>See Data Security Standard</sechandl></secinfo></idinfo><dataIdInfo><envirDesc Sync=\"TRUE\">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.3</envirDesc><dataLang><languageCode Sync=\"TRUE\" value=\"en\"/></dataLang><idCitation><resTitle Sync=\"TRUE\">FeatureClassName</resTitle></idCitation></dataIdInfo><metainfo><langmeta Sync=\"TRUE\">en</langmeta><metstdn Sync=\"TRUE\">FGDC Content Standards for Digital Geospatial Metadata</metstdn><metstdv Sync=\"TRUE\">FGDC-STD-001-1998</metstdv><mettc Sync=\"TRUE\">local time</mettc><metc><cntinfo><cntorgp><cntper>Randy Murphy</cntper><cntorg>Metadata auto-generated by Grafton Technologies, Inc.</cntorg></cntorgp><cntaddr><addrtype>43 Federal Street</addrtype><city>Newburyport</city><state>Massachusetts</state><postal>01950</postal></cntaddr><cntvoice>(617)290-9400</cntvoice></cntinfo></metc><metd Sync=\"TRUE\">20080812</metd><metextns><onlink Sync=\"TRUE\">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync=\"TRUE\">ESRI Metadata Profile</metprof></metextns></metainfo><mdLang><languageCode Sync=\"TRUE\" value=\"en\"/></mdLang><mdStanName Sync=\"TRUE\">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync=\"TRUE\">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync=\"TRUE\" value=\"004\"/></mdChar><mdHrLv><ScopeCd Sync=\"TRUE\" value=\"005\"/></mdHrLv><mdHrLvName Sync=\"TRUE\">dataset</mdHrLvName><distinfo><resdesc Sync=\"TRUE\">Downloadable Data</resdesc></distinfo><distInfo><distributor><distorTran><onLineSrc><orDesc Sync=\"TRUE\">002</orDesc><linkage Sync=\"TRUE\">file://computer03Temp\temp.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></onLineSrc></distorTran><distorFormat><formatName Sync=\"TRUE\">File Geodatabase Feature Class</formatName></distorFormat></distributor></distInfo><spdoinfo><direct Sync=\"TRUE\">Vector</direct><ptvctinf><esriterm Name=\"FeatureClassName\"><efeatyp Sync=\"TRUE\">Simple</efeatyp><efeageom Sync=\"TRUE\">Polygon</efeageom><esritopo Sync=\"TRUE\">FALSE</esritopo><efeacnt Sync=\"TRUE\">0</efeacnt><spindex Sync=\"TRUE\">TRUE</spindex><linrefer Sync=\"TRUE\">FALSE</linrefer></esriterm><sdtsterm Name=\"FeatureClassName\"><sdtstype Sync=\"TRUE\">G-polygon</sdtstype><ptvctcnt Sync=\"TRUE\">0</ptvctcnt></sdtsterm></ptvctinf></spdoinfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync=\"TRUE\" value=\"001\"/></topLvl><geometObjs Name=\"FeatureClassName\"><geoObjTyp><GeoObjTypCd Sync=\"TRUE\" value=\"001\"/></geoObjTyp><geoObjCnt Sync=\"TRUE\">0</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><eainfo><detailed Name=\"FeatureClassName\"><enttyp><enttypl Sync=\"TRUE\">FeatureClassName</enttypl><enttypt Sync=\"TRUE\">Feature Class</enttypt><enttypc Sync=\"TRUE\">0</enttypc></enttyp><attr><attrlabl Sync=\"TRUE\">OBJECTID</attrlabl><attalias Sync=\"TRUE\">OBJECTID</attalias><attrtype Sync=\"TRUE\">OID</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Internal feature number.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE</attrlabl><attalias Sync=\"TRUE\">SHAPE</attalias><attrtype Sync=\"TRUE\">Geometry</attrtype><attwidth Sync=\"TRUE\">0</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Feature geometry.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">id</attrlabl><attalias Sync=\"TRUE\">Identifier</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">40</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique identifier used by people to refer to this feature (note: this is not a system primary or foreign key value) </attrdef></attr><attr><attrlabl Sync=\"TRUE\">assetId</attrlabl><attalias Sync=\"TRUE\">Asset ID</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">30</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique identifier associated with this feature for the purpose of linking to an asset management system</attrdef></attr><attr><attrlabl Sync=\"TRUE\">icaoCode</attrlabl><attalias Sync=\"TRUE\">ICAO Code</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The 4-letter ICAO code of the aerodrome/heliport </attrdef></attr><attr><attrlabl Sync=\"TRUE\">NAME</attrlabl><attalias Sync=\"TRUE\">Name</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Name of the feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">OBSTACLETY</attrlabl><attalias Sync=\"TRUE\">Obstacle Type</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">32</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The type of object </attrdef></attr><attr><attrlabl Sync=\"TRUE\">OBSTACLESO</attrlabl><attalias Sync=\"TRUE\">Obstacle Source</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">16</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Identify how or where the object was identified </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ABOVEGROUN</attrlabl><attalias Sync=\"TRUE\">Above Ground Level</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The vertical distance from the ground to the highest point of the object </attrdef></attr><attr><attrlabl Sync=\"TRUE\">elevation</attrlabl><attalias Sync=\"TRUE\">Elevation</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Elevation of the point relative to the selected vertical datum </attrdef></attr><attr><attrlabl Sync=\"TRUE\">FROMDTHLDD</attrlabl><attalias Sync=\"TRUE\">Distance from Displaced Threshold</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Distance measured along runway centerline or centerline extended from a Displaced Threshold to point abeam the object. A negative distance indicates that the object is on the touchdown side of the runway approach end. This data is not provided for objects</attrdef></attr><attr><attrlabl Sync=\"TRUE\">FROMRWYCEN</attrlabl><attalias Sync=\"TRUE\">Distance from Runway Centerline</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Shortest distance from the runway centerline or centerline extended to the object. L (LEFT) or R (RIGHT) is relative to an observer facing forward in a landing aircraft. This data is not provided for objects penetrating the horizontal, conical and runway </attrdef></attr><attr><attrlabl Sync=\"TRUE\">FROMRWYEND</attrlabl><attalias Sync=\"TRUE\">Distance from Runway End</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Distance measured along runway centerline or centerline extended from the physical end to point abeam the object. A negative distance indicates that the object is on the touchdown side of the runway approach end. This data is not provided for objects pene</attrdef></attr><attr><attrlabl Sync=\"TRUE\">GROUPCODE</attrlabl><attalias Sync=\"TRUE\">Group Code</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">75</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A text code indicating that the object consists of a group of objects of the same type. For example, a group of trees, a group of buildings, a group of antennas, etc  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">HEIGHTABOV</attrlabl><attalias Sync=\"TRUE\">Height Above Airport</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Height above airport the official airport elevation point  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">HABOVRWY</attrlabl><attalias Sync=\"TRUE\">Height Above Runway</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Height above runway physical end for objects located underneath the approach surface </attrdef></attr><attr><attrlabl Sync=\"TRUE\">HABOVTDZ</attrlabl><attalias Sync=\"TRUE\">Height Above Touchdown Zone</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Height above touchdown zone elevation for objects located underneath the approach surface </attrdef></attr><attr><attrlabl Sync=\"TRUE\">LIGHTCODE</attrlabl><attalias Sync=\"TRUE\">Light Code</attalias><attrtype Sync=\"TRUE\">Boolean</attrtype><attwidth Sync=\"TRUE\">1</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A code indicating that the obstacle is lighted  </attrdef></attr><attr><attrlabl Sync=\"TRUE\">MARKINGF</attrlabl><attalias Sync=\"TRUE\">Marking Feature Type</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">17</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The type of the marking </attrdef></attr><attr><attrlabl Sync=\"TRUE\">PENVALSPE</attrlabl><attalias Sync=\"TRUE\">Pen Val Specified</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The elevation difference between the height of the object and the specified surface. Used to identify the amount of penetration of the main OIS </attrdef></attr><attr><attrlabl Sync=\"TRUE\">PENVALSUP</attrlabl><attalias Sync=\"TRUE\">Pen Val Supplemental</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The elevation difference between the height of the object and the supplemental surface. Used to identify the amount of penetration to a secondary OIS </attrdef></attr><attr><attrlabl Sync=\"TRUE\">elevationAccuracy</attrlabl><attalias Sync=\"TRUE\">Elevation Accuracy</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The accuracy of the obstacle elevation value </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ELLIPSOIDH</attrlabl><attalias Sync=\"TRUE\">Ellipsoid Height</attalias><attrtype Sync=\"TRUE\">Real</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The height above the reference ellipsoid, measured along the ellipsoidal outer normal through the point in question </attrdef></attr><attr><attrlabl Sync=\"TRUE\">lightingSystemType</attrlabl><attalias Sync=\"TRUE\">Lighting System Type</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">16</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Type of lighting system </attrdef></attr><attr><attrlabl Sync=\"TRUE\">OBSNUMBER</attrlabl><attalias Sync=\"TRUE\">Obstruction Number</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">30</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Provide the Aeronautical Study Number assigned by the FAA in the appropriate format (if known) </attrdef></attr><attr><attrlabl Sync=\"TRUE\">OISSURFA</attrlabl><attalias Sync=\"TRUE\">Ois Surface Condition</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">16</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The Obstruction Identification Surface that Obstructing Area represents </attrdef></attr><attr><attrlabl Sync=\"TRUE\">FRANGIBLE</attrlabl><attalias Sync=\"TRUE\">Frangible</attalias><attrtype Sync=\"TRUE\">Boolean</attrtype><attwidth Sync=\"TRUE\">1</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A Boolean indicating whether the object is frangible </attrdef></attr><attr><attrlabl Sync=\"TRUE\">FAACODE</attrlabl><attalias Sync=\"TRUE\">FAA Coordination Code</attalias><attrtype Sync=\"TRUE\">Boolean</attrtype><attwidth Sync=\"TRUE\">1</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A Boolean indicating whether the obstruction has received FAA coordination or review </attrdef></attr><attr><attrlabl Sync=\"TRUE\">STATUS</attrlabl><attalias Sync=\"TRUE\">Status</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">20</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A temporal description of the operational status of the feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">ALTERNATIV</attrlabl><attalias Sync=\"TRUE\">Alternative</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Discriminator used to tie features of a plan or proposal together into a version </attrdef></attr><attr><attrlabl Sync=\"TRUE\">projectNumber</attrlabl><attalias Sync=\"TRUE\">Project Number</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">20</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">A unique number associated with the project or work activity that installed or first recorded the location of this feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">DESCRIP</attrlabl><attalias Sync=\"TRUE\">Description</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">255</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Description of the feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">accuracy</attrlabl><attalias Sync=\"TRUE\">Accuracy</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An indicator of the spatial accuracy of the geometry used to depict this feature </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataSource</attrlabl><attalias Sync=\"TRUE\">Data Source</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The source of the data in this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataStatus</attrlabl><attalias Sync=\"TRUE\">Data Status</attalias><attrtype Sync=\"TRUE\">Enumeration</attrtype><attwidth Sync=\"TRUE\">25</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The development stage in which the data is in </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dateDataAcquired</attrlabl><attalias Sync=\"TRUE\">Date Data Acquired</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The date the data in this record was first captured </attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataStartDate</attrlabl><attalias Sync=\"TRUE\">Start Date of Data Validity</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The first date on which the data represented by this feature reflects a current, real world condition</attrdef></attr><attr><attrlabl Sync=\"TRUE\">dataEndDate</attrlabl><attalias Sync=\"TRUE\">End Date of Data Validity</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The last date on which the data represented by this feature reflects a current, real world condition</attrdef></attr><attr><attrlabl Sync=\"TRUE\">editorName</attrlabl><attalias Sync=\"TRUE\">Editor Name</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The name of the individual who last edited this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">lastUpdate</attrlabl><attalias Sync=\"TRUE\">Last Update</attalias><attrtype Sync=\"TRUE\">Date</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">The date upon which any data associated with this record was last updated </attrdef></attr><attr><attrlabl Sync=\"TRUE\">metaId</attrlabl><attalias Sync=\"TRUE\">Metadata Id</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An identifier used to refer to a metadata record that provide additional information about the data in this record </attrdef></attr><attr><attrlabl Sync=\"TRUE\">USERFLAG</attrlabl><attalias Sync=\"TRUE\">User Flag</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">254</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">An operator defined work area. This attribute can be used by the operator for user defined system processes. It does not affect the subject items data integrity and should not be used to store the subject items data </attrdef></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Length</attrlabl><attalias Sync=\"TRUE\">SHAPE_Length</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Length of feature in internal units.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Area</attrlabl><attalias Sync=\"TRUE\">SHAPE_Area</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Area of feature in internal units squared.</attrdef><attrdefs Sync=\"TRUE\">ESRI</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr></detailed></eainfo><mdDateSt Sync=\"TRUE\">20080812</mdDateSt></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/2295e2407951b94521dffb40da33f147.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Obstacle</resTitle></idCitation><idAbs>Obstacle</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/4f2658f648dba9d2e17ebad38929a1ff.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>HORZ 77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
@@ -3440,23 +3814,18 @@
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/7624724d3a15a5a0c0f7841809d5626a.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10052000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>OEIA</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/85c7ee16b74f97a9fb5ace39d78afacd.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>APRC77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/78b610085dc5b103a20889711ac4ded4.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10051800</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>APRC77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/c31e23ef9a92485bf246bc4c93ca0af0.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>TRNS77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/bc43adc6be0969016537413f76400832.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10052000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>HORZ 77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
-    },
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/ce06a2758e1da49a3545ad87011c7ee1.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10051800</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>PRIM77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/e50036fb11f467ff31c6c6c93f99be16.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170405</CreaDate><CreaTime>12312300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>PRIM77</resTitle></idCitation><idAbs>ObstructionIdSurface</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
     }
   ],
   "elevationSurfaces" : [

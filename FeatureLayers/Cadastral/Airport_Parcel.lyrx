@@ -1,23 +1,22 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "1.4.0",
-  "build" : 7198,
+  "version" : "2.0.0",
+  "build" : 8933,
   "layers" : [
-    "CIMPATH=localmap/airport_parcel2.xml"
+    "CIMPATH=9356374826f2492fa5a10db45676a9ac.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "Airport Parcel",
-      "uRI" : "CIMPATH=localmap/airport_parcel2.xml",
+      "uRI" : "CIMPATH=9356374826f2492fa5a10db45676a9ac.xml",
       "sourceModifiedTime" : {
         "type" : "TimeInstant"
       },
-      "metadataURI" : "CIMPATH=Metadata/8d84dac03f2c1d671e32da3bfe804071.xml",
       "description" : "AirportParcel",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}"
+        "mapElevationID" : "esriCIMElevationMode_BaseGlobeSurface"
       },
       "expanded" : true,
       "layer3DProperties" : {
@@ -41,16 +40,19 @@
       "layerType" : "Operational",
       "showLegends" : true,
       "transparency" : 25,
-      "visibility" : true,
+      "visibility" : false,
       "displayCacheType" : "Permanent",
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
         "type" : "CIMPopupInfo",
-        "title" : "{NAME}",
+        "title" : "Airport Parcel - {NAME}",
         "mediaInfos" : [
           {
+            "type" : "CIMAttachmentsMediaInfo",
+            "displayType" : "List"
+          },
+          {
             "type" : "CIMTableMediaInfo",
-            "row" : 1,
             "fields" : [
               "id",
               "NAME",
@@ -88,6 +90,8 @@
       },
       "showPopups" : true,
       "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
@@ -304,13 +308,202 @@
             "fieldName" : "DESCRIP",
             "visible" : true,
             "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Alias",
+            "fieldName" : "alias",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Asset ID",
+            "fieldName" : "assetId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Zoning Class",
+            "fieldName" : "zoningClass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Easement",
+            "fieldName" : "easement",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ICAO Code",
+            "fieldName" : "icaoCode",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Acquisition Purpose",
+            "fieldName" : "ACQPURPOSE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Passenger Charge Number",
+            "fieldName" : "PFCNUMBER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Alternative",
+            "fieldName" : "ALTERNATIV",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Project Number",
+            "fieldName" : "projectNumber",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Accuracy",
+            "fieldName" : "accuracy",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Source",
+            "fieldName" : "dataSource",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Data Status",
+            "fieldName" : "dataStatus",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Date Data Acquired",
+            "fieldName" : "dateDataAcquired",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Start Date of Data Validity",
+            "fieldName" : "dataStartDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "End Date of Data Validity",
+            "fieldName" : "dataEndDate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Editor Name",
+            "fieldName" : "editorName",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Last Update",
+            "fieldName" : "lastUpdate",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Metadata Id",
+            "fieldName" : "metaId",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "User Flag",
+            "fieldName" : "USERFLAG",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GlobalID",
+            "fieldName" : "GlobalID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_user",
+            "fieldName" : "created_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "created_date",
+            "fieldName" : "created_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_user",
+            "fieldName" : "last_edited_user",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "last_edited_date",
+            "fieldName" : "last_edited_date",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "visible" : true,
+            "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "DATABASE=..\\..\\..\\..\\EsriGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Airport_Parcel/FeatureServer",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "AirportParcel",
+          "workspaceConnectionString" : "AUTHENTICATION_MODE=DBMS;DATABASE=RTAA_MasterGDB;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;ENCRYPTED_PASSWORD=00022e68686830764b6b346974456f6c6a6a4a347652774744674a6c416c4a59692f726f422b387069394f67504b673d2a00;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;SERVER=RENO-GISWEB;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Airport_Parcel/FeatureServer;USER=GIS_Reader;VERSION=dbo.DEFAULT",
+          "workspaceFactory" : "SDE",
+          "dataset" : "RTAA_MasterGDB.DBO.AirportParcel",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -331,7 +524,6 @@
       "htmlPopupEnabled" : true,
       "selectable" : true,
       "featureCacheType" : "Session",
-      "enableDisplayFilters" : true,
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
@@ -454,10 +646,10 @@
           "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
-            "featureType" : "Line",
+            "featureType" : "Polygon",
             "featureWeight" : "Low",
             "labelWeight" : "High",
-            "numLabelsOption" : "OneLabelPerName",
+            "numLabelsOption" : "OneLabelPerShape",
             "lineLabelPosition" : {
               "type" : "CIMStandardLineLabelPosition",
               "above" : true,
@@ -611,32 +803,6 @@
       },
       "scaleSymbols" : true,
       "snappable" : true
-    }
-  ],
-  "binaryReferences" : [
-    {
-      "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/8d84dac03f2c1d671e32da3bfe804071.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170314</CreaDate><CreaTime>10054800</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Airport Parcel</resTitle></idCitation><idAbs>AirportParcel</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
-    }
-  ],
-  "elevationSurfaces" : [
-    {
-      "type" : "CIMMapElevationSurface",
-      "elevationMode" : "BaseGlobeSurface",
-      "name" : "Ground",
-      "verticalExaggeration" : 1,
-      "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}",
-      "color" : {
-        "type" : "CIMRGBColor",
-        "values" : [
-          255,
-          255,
-          255,
-          100
-        ]
-      },
-      "surfaceTINShadingMode" : "Smooth"
     }
   ]
 }

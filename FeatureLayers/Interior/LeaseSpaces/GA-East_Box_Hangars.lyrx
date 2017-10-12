@@ -1,0 +1,1178 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.0.0",
+  "build" : 8933,
+  "layers" : [
+    "CIMPATH=main/ga_east_tie_downs.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "GA-East Box Hangars",
+      "uRI" : "CIMPATH=main/ga_east_tie_downs.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant",
+        "start" : 978307200000
+      },
+      "metadataURI" : "CIMPATH=Metadata/b1b909760126def51c2ff3cb859793c8.xml",
+      "description" : "Airside_Leases",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{44073423-2178-4CD3-85EE-78B6B345366C}"
+      },
+      "expanded" : true,
+      "layer3DProperties" : {
+        "type" : "CIM3DLayerProperties",
+        "castShadows" : true,
+        "isLayerLit" : true,
+        "layerFaceCulling" : "None",
+        "maxDistance" : -1,
+        "minDistance" : -1,
+        "preloadTextureCutoffHigh" : 0,
+        "preloadTextureCutoffLow" : 0.25,
+        "textureCutoffHigh" : 0.25,
+        "textureCutoffLow" : 1,
+        "useCompressedTextures" : true,
+        "verticalExaggeration" : 1,
+        "verticalUnit" : {
+          "uwkid" : 9003
+        },
+        "lighting" : "OneSideDataNormal"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "0",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "definitionExpression" : "REGION = 'GA-East Box Hangars'",
+        "displayField" : "Leasee",
+        "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Leasee",
+            "fieldName" : "Leasee",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GlobalID",
+            "fieldName" : "GlobalID",
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Unit",
+            "fieldName" : "Unit",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Office Space",
+            "fieldName" : "OFFICE_SPACE",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Hangar Space",
+            "fieldName" : "HANGAR_SPACE",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Total Space",
+            "fieldName" : "TOTAL_SQUARE_FEET",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Storage Space",
+            "fieldName" : "STORAGE_SPACE",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Status",
+            "fieldName" : "Status",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "MATCHED",
+            "fieldName" : "MATCHED",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Length",
+            "fieldName" : "Shape_Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape_Area",
+            "fieldName" : "Shape_Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Floor",
+            "fieldName" : "FLOOR",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "REGION",
+            "fieldName" : "REGION",
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
+        "dataConnection" : {
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "Airside",
+          "workspaceConnectionString" : "DATABASE=.\\RTAA_EconomicDev.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "Airside_Leases",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "featureTemplates" : [
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Leased",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Leased"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Non-Leasable",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Non-Leasable"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Vacant",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Vacant"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Sale or Eviction in Process",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Sale or Eviction in Process"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Concessions Rental",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Concessions Rental"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Airport Use",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Airport Use"
+            ]
+          }
+        },
+        {
+          "type" : "CIMFeatureTemplate",
+          "name" : "Parkers",
+          "tags" : "Polygon",
+          "toolProgID" : "8f79967b-66a0-4a1c-b884-f44bc7e26921",
+          "defaultValues" : {
+            "type" : "PropertySet",
+            "propertySetItems" : [
+              "status",
+              "Parkers"
+            ]
+          }
+        }
+      ],
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "None",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expression" : "$feature.Unit",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Polygon",
+            "avoidPolygonHoles" : true,
+            "backgroundLabel" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : false,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : false,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ]
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 80,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 10,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "HorizontalInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Map",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinDuplicateLabels" : true,
+            "thinningDistanceUnit" : "Map",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou"
+          },
+          "minimumScale" : 5000,
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "Low",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 6,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "symbol3DProperties" : {
+                "type" : "CIM3DSymbolProperties",
+                "dominantSizeAxis3D" : "Z",
+                "rotationOrder3D" : "XYZ",
+                "scaleZ" : 1,
+                "scaleY" : 1
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "labelVisibility" : true,
+      "renderer" : {
+        "type" : "CIMUniqueValueRenderer",
+        "colorRamp" : {
+          "type" : "CIMFixedColorRamp",
+          "colorSpace" : {
+            "type" : "CIMICCColorSpace",
+            "url" : "Default RGB"
+          },
+          "colors" : [
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                237,
+                81,
+                81,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                20,
+                158,
+                206,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                167,
+                198,
+                54,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                158,
+                85,
+                156,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                252,
+                146,
+                31,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                255,
+                222,
+                62,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                247,
+                137,
+                216,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                183,
+                129,
+                74,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                60,
+                175,
+                153,
+                100
+              ]
+            },
+            {
+              "type" : "CIMRGBColor",
+              "colorSpace" : {
+                "type" : "CIMICCColorSpace",
+                "url" : "Default RGB"
+              },
+              "values" : [
+                107,
+                107,
+                214,
+                100
+              ]
+            }
+          ]
+        },
+        "defaultLabel" : "<all other values>",
+        "defaultSymbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "name" : "Group 8",
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 0.69999999999999996,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    110,
+                    110,
+                    110,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "name" : "Group 8",
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    130,
+                    130,
+                    130,
+                    100
+                  ]
+                }
+              }
+            ]
+          },
+          "symbolName" : "Group 8"
+        },
+        "fields" : [
+          "Status"
+        ],
+        "groups" : [
+          {
+            "type" : "CIMUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Leased",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 1",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 1",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            255,
+                            255,
+                            115,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 1"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Leased"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Non-Leasable",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 2",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 2",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            115,
+                            223,
+                            255,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 2"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Non-Leasable"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Vacant",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 3",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 3",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            255,
+                            85,
+                            0,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 3"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Vacant"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Sale or Eviction in Process",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 4",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 4",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            190,
+                            210,
+                            255,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 4"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Sale or Eviction in Process"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Concessions Rental",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 5",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 5",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            85,
+                            255,
+                            0,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 5"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Concessions Rental"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Airport Use",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 6",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 6",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            223,
+                            115,
+                            255,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 6"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Airport Use"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "editable" : true,
+                "label" : "Parkers",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidStroke",
+                        "enable" : true,
+                        "name" : "Group 7",
+                        "capStyle" : "Round",
+                        "joinStyle" : "Round",
+                        "lineStyle3D" : "Strip",
+                        "miterLimit" : 10,
+                        "width" : 0.69999999999999996,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            110,
+                            110,
+                            110,
+                            100
+                          ]
+                        }
+                      },
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "name" : "Group 7",
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            230,
+                            0,
+                            169,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "symbolName" : "Group 7"
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "Parkers"
+                    ]
+                  }
+                ],
+                "visible" : true
+              }
+            ],
+            "heading" : "Status"
+          }
+        ],
+        "useDefaultSymbol" : true
+      },
+      "scaleSymbols" : true,
+      "snappable" : true
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/b1b909760126def51c2ff3cb859793c8.xml",
+      "data" : "<metadata xml:lang=\"en\"><Esri><CreaDate>20170516</CreaDate><CreaTime>11361100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>FALSE</SyncOnce><DataProperties><itemProps><itemName Sync=\"TRUE\">Airside_Leases1</itemName><imsContentType Sync=\"TRUE\">002</imsContentType><itemLocation><linkage Sync=\"TRUE\">file://\\\\ARORALAPTOP56\\Users\\rhughes\\Documents\\ArcGIS\\Projects\\RTAA_EconomicDev\\RTAA_EconomicDev.gdb</linkage><protocol Sync=\"TRUE\">Local Area Network</protocol></itemLocation></itemProps><coordRef><type Sync=\"TRUE\">Projected</type><geogcsn Sync=\"TRUE\">GCS_NAD_1983_2011</geogcsn><csUnits Sync=\"TRUE\">Linear Unit: Foot_US (0.304801)</csUnits><projcsn Sync=\"TRUE\">NAD_1983_2011_StatePlane_Nevada_West_FIPS_2703_Ft_US</projcsn><peXml Sync=\"TRUE\">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/2.0.0'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_2011_StatePlane_Nevada_West_FIPS_2703_Ft_US&amp;quot;,GEOGCS[&amp;quot;GCS_NAD_1983_2011&amp;quot;,DATUM[&amp;quot;D_NAD_1983_2011&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,2624666.666666666],PARAMETER[&amp;quot;False_Northing&amp;quot;,13123333.33333333],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-118.5833333333333],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9999],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,34.75],UNIT[&amp;quot;Foot_US&amp;quot;,0.3048006096012192],AUTHORITY[&amp;quot;EPSG&amp;quot;,6523]]&lt;/WKT&gt;&lt;XOrigin&gt;-15822000&lt;/XOrigin&gt;&lt;YOrigin&gt;-32308200&lt;/YOrigin&gt;&lt;XYScale&gt;3048.0060960121928&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808333333333331&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;103102&lt;/WKID&gt;&lt;LatestWKID&gt;6523&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef><lineage><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170530\" Time=\"152839\">CalculateField AirsideLeasePolygons TOTAL_SQUARE_FEET 2468.0168 VB #</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"124806\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    for x in my_list:\\n        if x.isnumeric():\\n            d = my_list.insert(\"-\", my_list.index(x))\\n            return \"\".join(d)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125307\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isnumeric:\\n            my_list.insert(i, \"-\")\\n            y = \"\".join(my_list)\\n            return y\\n        else:\\n            i += 1\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125333\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isnumeric():\\n            my_list.insert(i, \"-\")\\n            y = \"\".join(my_list)\\n            return y\\n        else:\\n            i += 1\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125443\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = \"\"\\n    for x in my_list:\\n        if x.isnumeric():\\n            my_list.insert(i, \"-\")\\n            d = \"\".join(my_list)\\n            break\\n        else:\\n            i += 1\\n    return d\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125507\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = \"\"\\n    for x in my_list:\\n        if x.isnumeric:\\n            my_list.insert(i, \"-\")\\n            d = \"\".join(my_list)\\n            break\\n        else:\\n            i += 1\\n    return d\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125641\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = \"\"\\n    for x in my_list:\\n        if x.isdigit():\\n            my_list.insert(i, \"-\")\\n            d = \"\".join(my_list)\\n            break\\n        else:\\n            i += 1\\n    return d\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125710\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = \"\"\\n    for x in my_list:\\n        if x.isdigit():\\n            my_list.insert(i, \"-\")\\n            d = \"\".join(my_list)\\n            break\\n        else:\\n            i += 1\\n    return d\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"125825\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = \"\"\\n    for x in my_list:\\n        if x.isdigit():\\n            my_list.insert(i, \"-\")\\n            d = \"\".join(my_list)\\n            break\\n        i += 1\\n    return d\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"130205\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    d = []\\n    for x in my_list:\\n        if x.isdigit():\\n            my_list.insert(i, \"-\")\\n            d.append(\"\".join(my_list))\\n            break\\n        i += 1\\n    try:\\n        return d[0]\\n    except:\\n        return \"\"\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"130733\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isdigit():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"130913\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isalnum():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"130945\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isdigit():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"131004\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if x.isnumeric():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"131106\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = input.split()\\n    i = 0\\n    for x in my_list:\\n        if str(x).isdigit():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process><Process ToolSource=\"c:\\program files (x86)\\arcgis\\desktop10.4\\ArcToolbox\\Toolboxes\\Data Management Tools.tbx\\CalculateField\" Date=\"20170601\" Time=\"131341\">CalculateField \"AirsideLeasePolygons selection\" Unit addDash( !Unit!) PYTHON_9.3 \"def addDash( input ):\\n    my_list = [str(x) for x in input]\\n    i = 0\\n    for x in my_list:\\n        if x.isdigit():\\n            break\\n        else:\\n            i += 1\\n    my_list.insert(i, \"-\")\\n    return \"\".join(my_list)\"</Process></lineage></DataProperties><SyncDate>20170628</SyncDate><SyncTime>11320800</SyncTime><ModDate>20170628</ModDate><ModTime>11320800</ModTime></Esri><dataIdInfo><envirDesc Sync=\"TRUE\">Microsoft Windows 8 Version 6.2 (Build 9200) ; Esri ArcGIS 12.0.0.8933</envirDesc><dataLang><languageCode value=\"eng\" Sync=\"TRUE\"></languageCode><countryCode value=\"USA\" Sync=\"TRUE\"></countryCode></dataLang><idCitation><resTitle Sync=\"TRUE\">Airside_Leases1</resTitle><presForm><PresFormCd value=\"005\" Sync=\"TRUE\"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd value=\"001\" Sync=\"TRUE\"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode value=\"eng\" Sync=\"TRUE\"></languageCode><countryCode value=\"USA\" Sync=\"TRUE\"></countryCode></mdLang><distInfo><distFormat><formatName Sync=\"TRUE\">File Geodatabase Feature Class</formatName></distFormat></distInfo><mdHrLv><ScopeCd value=\"005\" Sync=\"TRUE\"></ScopeCd></mdHrLv><mdHrLvName Sync=\"TRUE\">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode code=\"6523\" Sync=\"TRUE\"></identCode><idCodeSpace Sync=\"TRUE\">EPSG</idCodeSpace><idVersion Sync=\"TRUE\">8.9.3(10.3.1)</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name=\"Airside_Leases1\"><geoObjTyp><GeoObjTypCd value=\"002\" Sync=\"TRUE\"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync=\"TRUE\">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value=\"001\" Sync=\"TRUE\"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><spdoinfo><ptvctinf><esriterm Name=\"Airside_Leases1\"><efeatyp Sync=\"TRUE\">Simple</efeatyp><efeageom code=\"4\" Sync=\"TRUE\"></efeageom><esritopo Sync=\"TRUE\">FALSE</esritopo><efeacnt Sync=\"TRUE\">0</efeacnt><spindex Sync=\"TRUE\">TRUE</spindex><linrefer Sync=\"TRUE\">FALSE</linrefer></esriterm></ptvctinf></spdoinfo><eainfo><detailed Name=\"Airside_Leases1\"><enttyp><enttypl Sync=\"TRUE\">Airside_Leases1</enttypl><enttypt Sync=\"TRUE\">Feature Class</enttypt><enttypc Sync=\"TRUE\">0</enttypc></enttyp><attr><attrlabl Sync=\"TRUE\">OBJECTID</attrlabl><attalias Sync=\"TRUE\">OBJECTID</attalias><attrtype Sync=\"TRUE\">OID</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Internal feature number.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE</attrlabl><attalias Sync=\"TRUE\">Shape</attalias><attrtype Sync=\"TRUE\">Geometry</attrtype><attwidth Sync=\"TRUE\">0</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Feature geometry.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Coordinates defining the features.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">Leasee</attrlabl><attalias Sync=\"TRUE\">Leasee</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">GlobalID</attrlabl><attalias Sync=\"TRUE\">GlobalID</attalias><attrtype Sync=\"TRUE\">GlobalID</attrtype><attwidth Sync=\"TRUE\">38</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Unit</attrlabl><attalias Sync=\"TRUE\">Unit</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">255</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">OFFICE_SPACE</attrlabl><attalias Sync=\"TRUE\">Office Space</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">HANGAR_SPACE</attrlabl><attalias Sync=\"TRUE\">Hangar Space</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">TOTAL_SQUARE_FEET</attrlabl><attalias Sync=\"TRUE\">Total Space</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">STORAGE_SPACE</attrlabl><attalias Sync=\"TRUE\">Storage Space</attalias><attrtype Sync=\"TRUE\">Integer</attrtype><attwidth Sync=\"TRUE\">4</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">Status</attrlabl><attalias Sync=\"TRUE\">Status</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">50</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">MATCHED</attrlabl><attalias Sync=\"TRUE\">MATCHED</attalias><attrtype Sync=\"TRUE\">String</attrtype><attwidth Sync=\"TRUE\">1</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Length</attrlabl><attalias Sync=\"TRUE\">Shape_Length</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Length of feature in internal units.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync=\"TRUE\">SHAPE_Area</attrlabl><attalias Sync=\"TRUE\">Shape_Area</attalias><attrtype Sync=\"TRUE\">Double</attrtype><attwidth Sync=\"TRUE\">8</attwidth><atprecis Sync=\"TRUE\">0</atprecis><attscale Sync=\"TRUE\">0</attscale><attrdef Sync=\"TRUE\">Area of feature in internal units squared.</attrdef><attrdefs Sync=\"TRUE\">Esri</attrdefs><attrdomv><udom Sync=\"TRUE\">Positive real numbers that are automatically generated.</udom></attrdomv></attr></detailed></eainfo><mdDateSt Sync=\"TRUE\">20170628</mdDateSt></metadata>\r\n"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{44073423-2178-4CD3-85EE-78B6B345366C}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
+    }
+  ]
+}
