@@ -853,7 +853,7 @@
           "symbolName" : "Group 8"
         },
         "fields" : [
-          "STATUS"
+          "LEASE_STATUS"
         ],
         "groups" : [
           {
@@ -1259,7 +1259,7 @@
                 "visible" : true
               }
             ],
-            "heading" : "Status"
+            "heading" : "Lease Status"
           }
         ],
         "useDefaultSymbol" : true

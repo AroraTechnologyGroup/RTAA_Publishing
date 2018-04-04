@@ -3,13 +3,13 @@
   "version" : "2.0.0",
   "build" : 8933,
   "layers" : [
-    "CIMPATH=main/airside_leases5.xml"
+    "CIMPATH=main/airside_leases.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
-      "name" : "Mini-Warehouse",
-      "uRI" : "CIMPATH=main/airside_leases5.xml",
+      "name" : "GA-East Tie Downs",
+      "uRI" : "CIMPATH=main/airside_leases.xml",
       "sourceModifiedTime" : {
         "type" : "TimeInstant",
         "start" : 978307200000
@@ -18,7 +18,7 @@
       "description" : "Airside_Leases",
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
-        "mapElevationID" : "{44073423-2178-4CD3-85EE-78B6B345366C}"
+        "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}"
       },
       "expanded" : true,
       "layer3DProperties" : {
@@ -52,8 +52,8 @@
       "featureElevationExpression" : "0",
       "featureTable" : {
         "type" : "CIMFeatureTable",
-        "definitionExpression" : "REGION = 'Mini-Warehouse'",
-        "displayField" : "Leasee",
+        "definitionExpression" : "REGION =  'GA-East Tie Downs'",
+        "displayField" : "TENANT_NAME",
         "editable" : true,
         "fieldDescriptions" : [
           {
@@ -73,43 +73,112 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Shape",
-            "fieldName" : "Shape",
+            "alias" : "created_user",
+            "fieldName" : "created_user",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Leasee",
-            "fieldName" : "Leasee",
+            "alias" : "created_date",
+            "fieldName" : "created_date",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "GlobalID",
-            "fieldName" : "GlobalID",
-            "readOnly" : true,
+            "alias" : "last_edited_user",
+            "fieldName" : "last_edited_user",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Unit",
-            "fieldName" : "Unit",
+            "alias" : "last_edited_date",
+            "fieldName" : "last_edited_date",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Office Space",
-            "fieldName" : "OFFICE_SPACE",
+            "alias" : "Tenant Name",
+            "fieldName" : "TENANT_NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact Name",
+            "fieldName" : "CONTACT_NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Address",
+            "fieldName" : "ADDRESS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Start Date",
+            "fieldName" : "START_DATE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Expiration",
+            "fieldName" : "EXPIRATION",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Lease Status",
+            "fieldName" : "LEASE_STATUS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Agreement Type",
+            "fieldName" : "AGREEMENT_TYPE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Space Type",
+            "fieldName" : "SPACE_TYPE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Square Footage",
+            "fieldName" : "SQUARE_FOOTAGE",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
               "alignmentWidth" : 0,
               "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Leased Space",
+            "fieldName" : "LEASED_SPACE",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
             },
             "visible" : true,
             "searchMode" : "Exact"
@@ -123,21 +192,21 @@
               "alignmentOption" : "esriAlignRight",
               "alignmentWidth" : 0,
               "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
+              "roundingValue" : 6
             },
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Total Space",
-            "fieldName" : "TOTAL_SQUARE_FEET",
+            "alias" : "Office Space",
+            "fieldName" : "OFFICE_SPACE",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
               "alignmentWidth" : 0,
               "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
+              "roundingValue" : 6
             },
             "visible" : true,
             "searchMode" : "Exact"
@@ -151,52 +220,15 @@
               "alignmentOption" : "esriAlignRight",
               "alignmentWidth" : 0,
               "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Status",
-            "fieldName" : "Status",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "MATCHED",
-            "fieldName" : "MATCHED",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape_Length",
-            "fieldName" : "Shape_Length",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
               "roundingValue" : 6
             },
-            "readOnly" : true,
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "Shape_Area",
-            "fieldName" : "Shape_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "readOnly" : true,
+            "alias" : "Region",
+            "fieldName" : "REGION",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -204,30 +236,117 @@
             "type" : "CIMFieldDescription",
             "alias" : "Floor",
             "fieldName" : "FLOOR",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Agreement ID",
+            "fieldName" : "AGREEMENT_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GlobalID",
+            "fieldName" : "GlobalID",
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact Address",
+            "fieldName" : "CONTACT_ADDRESS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact Phone Number",
+            "fieldName" : "CONTACT_PHONENUMBER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact2 Name",
+            "fieldName" : "CONTACT2_NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact2 Address",
+            "fieldName" : "CONTACT2_ADDRESS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Contact2 Phone Number",
+            "fieldName" : "CONTACT2_PHONENUMBER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Annual Revenue",
+            "fieldName" : "ANNUAL_REVENUE",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
               "alignmentOption" : "esriAlignRight",
               "alignmentWidth" : 0,
               "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
+              "roundingValue" : 6
             },
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "REGION",
-            "fieldName" : "REGION",
+            "alias" : "Shape.STArea()",
+            "fieldName" : "Shape.STArea()",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape.STLength()",
+            "fieldName" : "Shape.STLength()",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
           "type" : "CIMFeatureDatasetDataConnection",
-          "featureDataset" : "Airside",
-          "workspaceConnectionString" : "DATABASE=.\\RTAA_EconomicDev.gdb",
-          "workspaceFactory" : "FileGDB",
-          "dataset" : "Airside_Leases",
+          "featureDataset" : "RTAA_MasterGDB.DBO.Interior",
+          "workspaceConnectionString" : "ENCRYPTED_PASSWORD=00022e6844496b58714e6f7661344d65752f5278495a30736c304167583466627444682b544830596a42335a3044343d2a00;SERVER=RENO-GISWEB;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;DATABASE=RTAA_MasterGDB;USER=GIS_Reader;VERSION=dbo.DEFAULT;AUTHENTICATION_MODE=DBMS",
+          "workspaceFactory" : "SDE",
+          "dataset" : "RTAA_MasterGDB.DBO.LeaseSpace",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
@@ -734,7 +853,7 @@
           "symbolName" : "Group 8"
         },
         "fields" : [
-          "Status"
+          "LEASE_STATUS"
         ],
         "groups" : [
           {
@@ -1140,7 +1259,7 @@
                 "visible" : true
               }
             ],
-            "heading" : "Status"
+            "heading" : "Lease Status"
           }
         ],
         "useDefaultSymbol" : true
@@ -1162,7 +1281,7 @@
       "elevationMode" : "BaseGlobeSurface",
       "name" : "Ground",
       "verticalExaggeration" : 1,
-      "mapElevationID" : "{44073423-2178-4CD3-85EE-78B6B345366C}",
+      "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}",
       "color" : {
         "type" : "CIMRGBColor",
         "values" : [
