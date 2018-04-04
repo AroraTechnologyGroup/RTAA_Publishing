@@ -1,26 +1,25 @@
 {
   "type" : "CIMLayerDocument",
-  "version" : "2.0.0",
-  "build" : 8933,
+  "version" : "1.4.0",
+  "build" : 7198,
   "layers" : [
-    "CIMPATH=viewer_local/taxiway_element.xml"
+    "CIMPATH=internal_map/taxiwayelement.xml"
   ],
   "layerDefinitions" : [
     {
       "type" : "CIMFeatureLayer",
       "name" : "Taxiway Element",
-      "uRI" : "CIMPATH=viewer_local/taxiway_element.xml",
-      "sourceURI" : "c35c2cd441e14818ae113df88fa29505",
+      "uRI" : "CIMPATH=internal_map/taxiwayelement.xml",
       "sourceModifiedTime" : {
         "type" : "TimeInstant",
         "start" : 978307200000
       },
-      "metadataURI" : "CIMPATH=Metadata/b5ff4d703dad6ea63083be035152f28b.xml",
+      "metadataURI" : "CIMPATH=Metadata/808fcb070ef41d724c9de64c8fd3f41e.xml",
       "description" : "TaxiwayElement",
       "layerElevation" : {
-        "type" : "CIMLayerElevationSurface"
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}"
       },
-      "expanded" : true,
       "layer3DProperties" : {
         "type" : "CIM3DLayerProperties",
         "castShadows" : true,
@@ -47,21 +46,14 @@
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
         "type" : "CIMPopupInfo",
-        "title" : "Taxiway Element: {NAME}",
+        "title" : "{NAME}",
         "mediaInfos" : [
           {
-            "type" : "CIMAttachmentsMediaInfo",
-            "displayType" : "List"
-          },
-          {
             "type" : "CIMTableMediaInfo",
+            "row" : 1,
+            "column" : 1,
             "fields" : [
-              "id",
-              "assetId",
-              "NAME",
-              "icaoCode",
               "TAXIWAYID",
-              "runwayComplex",
               "TAXIWAYT",
               "SURFACEM",
               "PAVEMENTCL",
@@ -70,32 +62,17 @@
               "SEQUENCE",
               "SURFACET",
               "DESIGNGR",
-              "LENGTH",
               "WIDTH",
-              "MAXSPEED",
               "WINGSPAN",
               "STATUS",
-              "ALTERNATIV",
-              "projectNumber",
-              "DESCRIP",
-              "accuracy",
-              "dataSource",
-              "dataStatus",
-              "dateDataAcquired",
-              "dataStartDate",
-              "dataEndDate",
-              "editorName",
-              "lastUpdate",
-              "metaId",
-              "USERFLAG"
+              "DESCRIP"
             ]
           }
         ]
       },
       "showPopups" : true,
       "serviceLayerID" : -1,
-      "refreshRate" : -1,
-      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "autoGenerateFeatureTemplates" : true,
       "featureElevationExpression" : "Shape.Z",
       "featureTable" : {
         "type" : "CIMFeatureTable",
@@ -106,6 +83,27 @@
             "type" : "CIMFieldDescription",
             "alias" : "OBJECTID",
             "fieldName" : "OBJECTID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -113,6 +111,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Identifier",
             "fieldName" : "id",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -120,6 +125,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Asset ID",
             "fieldName" : "assetId",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -127,6 +139,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Name",
             "fieldName" : "NAME",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -134,6 +153,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "ICAO Code",
             "fieldName" : "icaoCode",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -141,6 +167,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Taxiway ID",
             "fieldName" : "TAXIWAYID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -148,6 +181,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Runway Complex",
             "fieldName" : "runwayComplex",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -155,6 +195,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Taxiway Type",
             "fieldName" : "TAXIWAYT",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -162,6 +209,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Surface Material",
             "fieldName" : "SURFACEM",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -169,6 +223,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Pavement Classification Number",
             "fieldName" : "PAVEMENTCL",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -176,6 +237,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Surface Condition",
             "fieldName" : "SURFACEC",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -183,6 +251,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Directionality",
             "fieldName" : "DIRECTION",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -190,6 +265,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Sequence",
             "fieldName" : "SEQUENCE",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -197,6 +279,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Surface Type",
             "fieldName" : "SURFACET",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -204,6 +293,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Design Group",
             "fieldName" : "DESIGNGR",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -211,6 +307,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Length",
             "fieldName" : "LENGTH",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -218,6 +321,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Width",
             "fieldName" : "WIDTH",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -225,6 +335,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Maximum Speed",
             "fieldName" : "MAXSPEED",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -232,6 +349,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Wingspan",
             "fieldName" : "WINGSPAN",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -239,6 +363,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Status",
             "fieldName" : "STATUS",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -246,6 +377,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Alternative",
             "fieldName" : "ALTERNATIV",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -253,6 +391,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Project Number",
             "fieldName" : "projectNumber",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -260,6 +405,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Description",
             "fieldName" : "DESCRIP",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -267,6 +419,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Accuracy",
             "fieldName" : "accuracy",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -274,6 +433,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Data Source",
             "fieldName" : "dataSource",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -281,6 +447,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Data Status",
             "fieldName" : "dataStatus",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -288,6 +461,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Date Data Acquired",
             "fieldName" : "dateDataAcquired",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -295,6 +475,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Start Date of Data Validity",
             "fieldName" : "dataStartDate",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -302,6 +489,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "End Date of Data Validity",
             "fieldName" : "dataEndDate",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -309,6 +503,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Editor Name",
             "fieldName" : "editorName",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -316,6 +517,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Last Update",
             "fieldName" : "lastUpdate",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -323,6 +531,13 @@
             "type" : "CIMFieldDescription",
             "alias" : "Metadata Id",
             "fieldName" : "metaId",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -330,123 +545,113 @@
             "type" : "CIMFieldDescription",
             "alias" : "User Flag",
             "fieldName" : "USERFLAG",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "GlobalID",
-            "fieldName" : "GlobalID",
+            "alias" : "Shape_Length",
+            "fieldName" : "Shape_Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "created_user",
-            "fieldName" : "created_user",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "created_date",
-            "fieldName" : "created_date",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "last_edited_user",
-            "fieldName" : "last_edited_user",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "last_edited_date",
-            "fieldName" : "last_edited_date",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape__Area",
-            "fieldName" : "Shape__Area",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape__Length",
-            "fieldName" : "Shape__Length",
+            "alias" : "Shape_Area",
+            "fieldName" : "Shape_Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
             "visible" : true,
             "searchMode" : "Exact"
           }
         ],
         "dataConnection" : {
-          "type" : "CIMStandardDataConnection",
-          "workspaceConnectionString" : "AUTHENTICATION_MODE=DBMS;DATABASE=RTAA_MasterGDB;DBCLIENT=sqlserver;DB_CONNECTION_PROPERTIES=RENO-GISWEB\\SQLEXPRESS;ENCRYPTED_PASSWORD=00022e686879706c466b314a53573578743971754a424f467a6e2b3568484373556b7957656d436b4e4937446873553d2a00;INSTANCE=sde:sqlserver:RENO-GISWEB\\SQLEXPRESS;SERVER=RENO-GISWEB;URL=https://services6.arcgis.com/GC5xdlDk2dEYWofH/arcgis/rest/services/Taxiway_Element/FeatureServer;USER=GIS_Reader;VERSION=dbo.DEFAULT",
-          "workspaceFactory" : "SDE",
-          "dataset" : "RTAA_MasterGDB.DBO.TaxiwayElement",
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "Airfield",
+          "workspaceConnectionString" : "DATABASE=..\\..\\MasterGDB\\MasterGDB_05_25_16\\MasterGDB_05_25_16.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "TaxiwayElement",
           "datasetType" : "esriDTFeatureClass"
         },
         "studyAreaSpatialRel" : "esriSpatialRelUndefined",
         "searchOrder" : "esriSearchOrderSpatial"
       },
-      "featureTemplates" : [
-        {
-          "type" : "CIMFeatureTemplate",
-          "name" : "Taxiway Element",
-          "toolProgID" : "{8F79967B-66A0-4a1c-B884-F44BC7E26921}",
-          "defaultValues" : {
-            "type" : "PropertySet",
-            "propertySetItems" : [
-            ]
-          }
-        }
-      ],
       "htmlPopupEnabled" : true,
       "selectable" : true,
-      "featureCacheType" : "Session",
+      "featureCacheType" : "None",
+      "enableDisplayFilters" : true,
       "labelClasses" : [
         {
           "type" : "CIMLabelClass",
-          "expression" : "$feature[\"TAXIWAYID\"]",
-          "expressionEngine" : "Arcade",
+          "expression" : "def FindLabel ( [TAXIWAYID] ):\n    lbl = [TAXIWAYID]\n    lbl = lbl.strip()\n    if lbl != \"n/a\":\n    \treturn lbl\n    ",
+          "expressionEngine" : "Python",
           "featuresToLabel" : "AllVisibleFeatures",
           "maplexLabelPlacementProperties" : {
             "type" : "CIMMaplexLabelPlacementProperties",
             "featureType" : "Polygon",
             "avoidPolygonHoles" : true,
-            "canOverrunFeature" : false,
-            "canPlaceLabelOutsidePolygon" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : false,
             "canRemoveOverlappingLabel" : true,
-            "canStackLabel" : false,
+            "canStackLabel" : true,
             "connectionType" : "Unambiguous",
             "constrainOffset" : "NoConstraint",
             "contourAlignmentType" : "Page",
             "contourLadderType" : "Straight",
             "contourMaximumAngle" : 90,
             "enableConnection" : true,
-            "featureWeight" : 100,
+            "featureWeight" : 0,
             "fontHeightReductionLimit" : 4,
             "fontHeightReductionStep" : 0.5,
             "fontWidthReductionLimit" : 90,
             "fontWidthReductionStep" : 5,
             "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
             "labelBuffer" : 15,
-            "labelLargestPolygon" : true,
+            "labelLargestPolygon" : false,
             "labelPriority" : -1,
             "labelStackingProperties" : {
               "type" : "CIMMaplexLabelStackingProperties",
               "stackAlignment" : "ChooseBest",
               "maximumNumberOfLines" : 3,
               "minimumNumberOfCharsPerLine" : 3,
-              "maximumNumberOfCharsPerLine" : 24
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ]
             },
             "lineFeatureType" : "General",
             "linePlacementMethod" : "OffsetCurvedFromLine",
-            "maximumLabelOverrun" : 36,
+            "maximumLabelOverrun" : 80,
             "maximumLabelOverrunUnit" : "Point",
             "minimumFeatureSizeUnit" : "Map",
             "multiPartOption" : "OneLabelPerPart",
@@ -470,7 +675,7 @@
             },
             "pointPlacementMethod" : "AroundPoint",
             "polygonAnchorPointType" : "GeometricCenter",
-            "polygonBoundaryWeight" : 200,
+            "polygonBoundaryWeight" : 0,
             "polygonExternalZones" : {
               "type" : "CIMMaplexExternalZonePriorities",
               "aboveLeft" : 4,
@@ -506,14 +711,15 @@
               "fontReduction" : 4,
               "abbreviation" : 5
             },
-            "thinningDistanceUnit" : "Map",
+            "thinDuplicateLabels" : true,
+            "thinningDistance" : 2,
+            "thinningDistanceUnit" : "Inch",
             "truncationMarkerCharacter" : ".",
             "truncationMinimumLength" : 1,
             "truncationPreferredCharacters" : "aeiou"
           },
-          "minimumScale" : 4697,
-          "name" : "Label Class 1",
-          "priority" : 0,
+          "name" : "Class 1",
+          "priority" : -1,
           "standardLabelPlacementProperties" : {
             "type" : "CIMStandardLabelPlacementProperties",
             "featureType" : "Line",
@@ -558,16 +764,14 @@
             "symbol" : {
               "type" : "CIMTextSymbol",
               "blockProgression" : "TTB",
-              "compatibilityMode" : true,
               "depth3D" : 1,
-              "drawSoftHyphen" : true,
               "extrapolateBaselines" : true,
               "fontEffects" : "Normal",
               "fontEncoding" : "Unicode",
-              "fontFamilyName" : "Tahoma",
-              "fontStyleName" : "Bold",
-              "fontType" : "Unspecified",
-              "haloSize" : 0.75,
+              "fontFamilyName" : "Corbel",
+              "fontStyleName" : "Regular",
+              "fontType" : "TTOpenType",
+              "haloSize" : 1,
               "haloSymbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
@@ -586,7 +790,7 @@
                   }
                 ]
               },
-              "height" : 9,
+              "height" : 8,
               "hinting" : "Default",
               "horizontalAlignment" : "Left",
               "kerning" : true,
@@ -596,6 +800,24 @@
               "symbol" : {
                 "type" : "CIMPolygonSymbol",
                 "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 0,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        255,
+                        100
+                      ]
+                    }
+                  },
                   {
                     "type" : "CIMSolidFill",
                     "enable" : true,
@@ -611,14 +833,20 @@
                   }
                 ]
               },
+              "symbol3DProperties" : {
+                "type" : "CIM3DSymbolProperties",
+                "dominantSizeAxis3D" : "Z",
+                "rotationOrder3D" : "XYZ",
+                "scaleZ" : 1,
+                "scaleY" : 1
+              },
               "textCase" : "Normal",
               "textDirection" : "LTR",
               "verticalAlignment" : "Bottom",
               "verticalGlyphOrientation" : "Right",
               "wordSpacing" : 100,
               "billboardMode3D" : "FaceNearPlane"
-            },
-            "symbolName" : "Text"
+            }
           },
           "useCodedValue" : true,
           "visibility" : true,
@@ -635,14 +863,32 @@
             "type" : "CIMPolygonSymbol",
             "symbolLayers" : [
               {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 0,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
                 "type" : "CIMSolidFill",
                 "enable" : true,
                 "color" : {
                   "type" : "CIMRGBColor",
                   "values" : [
-                    133,
-                    133,
-                    133,
+                    225,
+                    225,
+                    225,
                     100
                   ]
                 }
@@ -658,8 +904,27 @@
   "binaryReferences" : [
     {
       "type" : "CIMBinaryReference",
-      "uRI" : "CIMPATH=Metadata/b5ff4d703dad6ea63083be035152f28b.xml",
-      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20171011</CreaDate><CreaTime>13595200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>Taxiway_Element</resTitle></idCitation><idAbs>TaxiwayElement</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+      "uRI" : "CIMPATH=Metadata/808fcb070ef41d724c9de64c8fd3f41e.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20170116</CreaDate><CreaTime>16392600</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>TaxiwayElement</resTitle></idCitation><idAbs>TaxiwayElement</idAbs><idPurp></idPurp><idCredit></idCredit><resConst><Consts><useLimit></useLimit></Consts></resConst></dataIdInfo></metadata>\r\n"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{09D30689-4449-4DF3-BE89-B535D9275804}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth"
     }
   ]
 }
